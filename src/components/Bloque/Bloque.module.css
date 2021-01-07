@@ -1,0 +1,26 @@
+.container {
+    padding: 16px;
+    animation: photoSlide 3s ease-out forwards;
+}
+h2 {
+    color: black;
+}
+/* @keyframes photoSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    85% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+} */
