@@ -31,7 +31,7 @@ const Slides = (props) => {
         const timer = setTimeout(() => {
             onForward();
             setBack(null);
-        }, 3000);
+        }, 5000);
         return () => {
             clearTimeout(timer);
         };
@@ -56,11 +56,11 @@ const Slides = (props) => {
                         <i className="fas fa-chevron-right"></i>
                     </div>
                 </div>
+                <img className={getClasses(1)} src={van1} alt={"Van1"}></img>
+                <img className={getClasses(2)} src={van2} alt={"Van2"}></img>
+                <img className={getClasses(3)} src={van3} alt={"Van3"}></img>
+                <Indicator selected={counter}></Indicator>
             </div>
-            <img className={getClasses(1)} src={van1} alt={"Van1"}></img>
-            <img className={getClasses(2)} src={van2} alt={"Van2"}></img>
-            <img className={getClasses(3)} src={van3} alt={"Van3"}></img>
-            <Indicator selected={counter}></Indicator>
         </React.Fragment>
     );
 };

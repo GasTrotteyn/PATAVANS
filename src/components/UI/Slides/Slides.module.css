@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    top: 120px;
+    top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     width: 95%;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 3;
 }
 
 .control {
@@ -37,13 +37,34 @@
 }
 
 .selected {
-    animation: photoSlideForward 3s ease-out forwards;
+    animation: photoSlideForward 5s ease-out forwards;
+    z-index: 2;
 }
 .back {
-    animation: photoSlideBack 3s ease-out forwards;
+    animation: photoSlideBack 5s ease-out forwards;
 }
 
 @keyframes photoSlideForward {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    85% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes photoSlideBack {
     0% {
         opacity: 0;
         transform: translateX(-100%);
@@ -53,26 +74,6 @@
         opacity: 1;
         transform: translateX(0);
     }
-    85% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-}
-
-@keyframes photoSlideBack {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    20% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 
     85% {
         opacity: 1;
@@ -80,6 +81,6 @@
     }
     100% {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 }
