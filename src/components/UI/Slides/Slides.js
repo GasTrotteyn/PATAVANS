@@ -1,29 +1,29 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Indicator from "./Indicator/Indicator";
 import classes from "./Slides.module.css";
-import van1 from "../../../Assests/van1.jpg";
-import van2 from "../../../Assests/van2.jpg";
-import van3 from "../../../Assests/van3.jpg";
+import leftArrowWhite from "../../../Assests/optimized/arrow-left-w.svg";
+import rightArrowWhite from "../../../Assests/optimized/arrow-right-w.svg";
 
 const Slides = (props) => {
+    const { images, time } = props;
     const [counter, setCounter] = useState(1);
     const [back, setBack] = useState(null);
 
     const onForward = useCallback(() => {
-        if (counter <= 2) {
+        if (counter < images.length) {
             setCounter((prev) => prev + 1);
         } else {
             setCounter(1);
         }
-    }, [counter]);
+    }, [counter, images]);
 
     const onBack = () => {
-        if (counter >= 2) {
+        if (counter !== 1) {
             setCounter((prev) => prev - 1);
             setBack(counter - 1);
         } else {
-            setCounter(3);
-            setBack(3);
+            setCounter(images.length);
+            setBack(images.length);
         }
     };
 
@@ -31,35 +31,43 @@ const Slides = (props) => {
         const timer = setTimeout(() => {
             onForward();
             setBack(null);
-        }, 5000);
+        }, time);
         return () => {
             clearTimeout(timer);
         };
-    }, [onForward]);
+    }, [onForward, time]);
 
     const getClasses = (id) => {
         return [
             classes.photo,
-            counter === id ? classes.selected : null,
-            back === id ? classes.back : null,
+            counter === id ? classes.selected5000 : null,
+            back === id ? classes.back5000 : null,
         ].join(" ");
     };
+
+    let content = images.map((img) => {
+        return (
+            <img
+                className={getClasses(img.id)}
+                src={img.photo}
+                alt={img.alt}
+            ></img>
+        );
+    });
 
     return (
         <React.Fragment>
             <div className={classes.container}>
                 <div className={classes.controls}>
                     <div className={classes.control} onClick={onBack}>
-                        <i className="fas fa-chevron-left"></i>
+                        <img src={leftArrowWhite} alt={"left arrow"}></img>
                     </div>
                     <div className={classes.control} onClick={onForward}>
-                        <i className="fas fa-chevron-right"></i>
+                        <img src={rightArrowWhite} alt={"left arrow"}></img>
                     </div>
                 </div>
-                <img className={getClasses(1)} src={van1} alt={"Van1"}></img>
-                <img className={getClasses(2)} src={van2} alt={"Van2"}></img>
-                <img className={getClasses(3)} src={van3} alt={"Van3"}></img>
-                <Indicator selected={counter}></Indicator>
+                {content}
+                <Indicator selected={counter} images={images}></Indicator>
             </div>
         </React.Fragment>
     );

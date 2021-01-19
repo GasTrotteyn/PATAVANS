@@ -1,46 +1,41 @@
 .container {
-    position: relative;
-    top: 20px;
+    margin: 38vw auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 93vw;
 }
 
 .controls {
     margin: auto;
     position: absolute;
-    width: 95%;
+    width: 83vw;
     display: flex;
     justify-content: space-between;
     z-index: 3;
 }
 
 .control {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(246, 226, 160, 0.5);
-    border-radius: 30%;
+    width: 4vw;
     cursor: pointer;
-    color: white;
     text-align: center;
     font-size: 20px;
     box-sizing: border-box;
 }
 
 .photo {
-    max-height: 250px;
-    max-width: 90%;
-    box-shadow: 0px 10px 10px #b6b5b5;
-    transform: translateX(-450%);
+    max-height: 57vw;
+    max-width: 90vw;
+    box-shadow: 0px 2vw 2vw #b6b5b5;
+    transform: translateX(-150%);
     position: absolute;
 }
 
-.selected {
+.selected5000 {
     animation: photoSlideForward 5s ease-out forwards;
     z-index: 2;
 }
-.back {
+.back5000 {
     animation: photoSlideBack 5s ease-out forwards;
 }
 

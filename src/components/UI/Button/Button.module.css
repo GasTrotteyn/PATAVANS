@@ -1,15 +1,15 @@
 .Button {
-    border: 1px solid rgb(184, 184, 184);
-    width: 120px;
-    height: 34px;
+    border: 1px solid #b8b8b8;
+    width: 30vw;
+    height: 10vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: white;
-    padding-bottom: 4px;
+    padding-bottom: 0.8vw;
     box-sizing: border-box;
+    font-size: 4vw;
 }
-.Button i {
-    color: rgb(184, 184, 184);
-    margin-top: 4px;
+.arrow {
+    width: 6vw;
 }

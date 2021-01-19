@@ -1,0 +1,37 @@
+.titleStrip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question {
+    width: 80vw;
+    font-size: 4.5vw;
+}
+
+.button {
+    border: 1px solid #b8b8b8;
+    border-radius: 2.5vw;
+    width: 6vw;
+    height: 6vw;
+    min-width: 22px;
+    min-height: 22px;
+    background-color: white;
+    margin-left: 5vw;
+    padding: 0.8vw;
+}
+.button img {
+    width: 100%;
+}
+
+.answer {
+    margin: 0 0 3vw 0;
+    font-size: 4.1vw;
+}
+.paragraph {
+    margin-bottom: 0;
+}
+.paragraph a {
+    text-decoration: none;
+    color: #ff9e02;
+}

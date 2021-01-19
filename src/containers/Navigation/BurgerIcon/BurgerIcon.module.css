@@ -1,18 +1,17 @@
 .BurgerIcon {
-    width: 33px;
-    height: 50px;
+    width: 7vw;
+    height: 7vw;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
     box-sizing: border-box;
     cursor: pointer;
 }
 
 .BurgerIcon div {
     width: 90%;
-    height: 3px;
+    height: 0.8vw;
     background-color: #ffffff;
 }
 

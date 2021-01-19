@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import classes from "./Faqs.module.css";
 import Faq from "./Faq/Faq";
+import Button from "../../components/UI/Button/Button";
 
 const Faqs = (props) => {
     const [faqList, setFaqList] = useState([
         {
             question:
                 "WHAT IS INCLUDED IN YOUR BASIC VS FULL CONVERSION? AND HOW MUCH DO THEY COST?",
-            answer:
-                " Detailed information on the Basic Conversion here. Detailed information on the Full Conversion here. If you are interested in customizing your basic conversion with specific add-ons, you can find our full list here.",
+            answer: "Detailed information on the ",
+            link1: "Basic Conversion here.",
+            link2: "Full Conversion here.",
+            answer2:
+                "If you are interested in customizing your basic conversion with specific add-ons, you can find our ",
+            link3: "full list here",
             clicked: false,
             id: 0,
         },
@@ -16,7 +21,7 @@ const Faqs = (props) => {
             question: "WHAT KIND OF VANS CAN YOU CONVERT?",
             answer:
                 "We deal mainly with Sprinter, Promaster, and Transit vans, however we can convert almost every type. If there is a specific kind of van you would like to convert, please list it in the Pre-Conversion Questionnaire.",
-            clicked: true,
+            clicked: false,
             id: 1,
         },
         {
@@ -103,6 +108,10 @@ const Faqs = (props) => {
                 onClicked={() => {
                     toggleOpen(faq.id);
                 }}
+                link1={faq.link1}
+                link2={faq.link2}
+                link3={faq.link3}
+                answer2={faq.answer2}
             ></Faq>
         );
     });
@@ -112,6 +121,7 @@ const Faqs = (props) => {
             <h4 className={classes.flag}>FAQ</h4>
             <h2 className={classes.title}>We have the answers</h2>
             {content}
+            <Button>about us</Button>
         </div>
     );
 };

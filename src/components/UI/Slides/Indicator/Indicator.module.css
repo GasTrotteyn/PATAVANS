@@ -3,8 +3,9 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: 280px;
+    margin-top: 65vw;
     width: 40px;
+    z-index: 3;
 }
 
 .bubble {
@@ -12,7 +13,7 @@
     height: 7px;
     background-color: rgb(209, 209, 208);
     border-radius: 50%;
-    transition: all 0.3s linear;
+    transition: all 0.4s linear;
 }
 
 .selected {
