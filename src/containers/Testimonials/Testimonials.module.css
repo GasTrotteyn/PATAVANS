@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    width: 90vw;
+}
+
+.slides {
+    position: absolute;
+    top: 0;
+    right: 5vw;
+}

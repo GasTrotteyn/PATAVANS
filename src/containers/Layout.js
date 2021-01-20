@@ -1,10 +1,7 @@
 import React from "react";
 //import classes from "./Layout.module.css";
 import Header from "./Header";
-import van1 from "../Assests/slide1.jpg";
-import van2 from "../Assests/van2.jpg";
-import van3 from "../Assests/van3.jpg";
-import Slides from "../components/UI/Slides/Slides";
+import Carousel from "../containers/Carousel/Carousel";
 import RightPiece from "../components/Pieces/RightPiece/RightPiece";
 import LeftPiece from "../components/Pieces/LeftPiece/LeftPiece";
 import window from "../Assests/optimized/img-home-about.jpg";
@@ -16,21 +13,15 @@ import bedIcon from "../Assests/optimized/bg-icon-foot.png";
 import bedExtension from "..//Assests/optimized/img-feature-bedextension3.png";
 import HomeGallery from "../containers/Gallery/HomeGallery/HomeGallery";
 import Faqs from "../containers/Faqs/Faqs";
-import review1 from "../Assests/optimized/review1.png";
+import Testimonials from "../containers/Testimonials/Testimonials";
 import Iframe from "../components/UI/Iframe/Iframe";
+import IconHomeSection from "./IconsHome/IconsHomeSection";
 
 const Layout = (props) => {
     return (
         <React.Fragment>
             <Header></Header>
-            <Slides
-                images={[
-                    { id: 1, photo: van1, alt: "van 1" },
-                    { id: 2, photo: van2, alt: "van 2" },
-                    { id: 3, photo: van3, alt: "van 3" },
-                ]}
-                time={5000}
-            ></Slides>
+            <Carousel></Carousel>
             <RightPiece
                 flag="WHAT WE DO"
                 title="We just build your dream"
@@ -65,14 +56,8 @@ const Layout = (props) => {
             ></RightPiece>
             <HomeGallery></HomeGallery>
             <Faqs></Faqs>
-            <Slides
-                images={[
-                    { id: 1, photo: review1, alt: "van 1" },
-                    { id: 2, photo: van2, alt: "van 2" },
-                    { id: 3, photo: van3, alt: "van 3" },
-                ]}
-                time={5000}
-            ></Slides>
+            <Testimonials></Testimonials>
+            <IconHomeSection></IconHomeSection>
             <Iframe></Iframe>
         </React.Fragment>
     );

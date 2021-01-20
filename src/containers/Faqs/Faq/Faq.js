@@ -34,13 +34,13 @@ const Faq = (props) => {
         <div className={classes.container}>
             <div className={classes.titleStrip}>
                 <h3 className={classes.question}>{props.question}</h3>
-                <button className={classes.button} onClick={props.onClicked}>
+                <div className={classes.button} onClick={props.onClicked}>
                     {props.clicked ? (
                         <img src={iconClose} alt="icon close"></img>
                     ) : (
                         <img src={iconPlus} alt="icon plus"></img>
                     )}
-                </button>
+                </div>
             </div>
             <h6 className={classes.answer}>{answerToRender}</h6>
         </div>

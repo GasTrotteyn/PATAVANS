@@ -5,25 +5,25 @@ import leftArrowWhite from "../../../Assests/optimized/arrow-left-w.svg";
 import rightArrowWhite from "../../../Assests/optimized/arrow-right-w.svg";
 
 const Slides = (props) => {
-    const { images, time } = props;
+    const { payload, time, type } = props;
     const [counter, setCounter] = useState(1);
     const [back, setBack] = useState(null);
 
     const onForward = useCallback(() => {
-        if (counter < images.length) {
+        if (counter < payload.length) {
             setCounter((prev) => prev + 1);
         } else {
             setCounter(1);
         }
-    }, [counter, images]);
+    }, [counter, payload]);
 
     const onBack = () => {
         if (counter !== 1) {
             setCounter((prev) => prev - 1);
             setBack(counter - 1);
         } else {
-            setCounter(images.length);
-            setBack(images.length);
+            setCounter(payload.length);
+            setBack(payload.length);
         }
     };
 
@@ -38,22 +38,44 @@ const Slides = (props) => {
     }, [onForward, time]);
 
     const getClasses = (id) => {
-        return [
-            classes.photo,
-            counter === id ? classes.selected5000 : null,
-            back === id ? classes.back5000 : null,
-        ].join(" ");
+        if (time === 5000) {
+            return [
+                type === "images" ? classes.photo : classes.text,
+                counter === id ? classes.selected5000 : null,
+                back === id ? classes.back5000 : null,
+            ].join(" ");
+        }
+        if (time === 10000) {
+            return [
+                type === "images" ? classes.photo : classes.text,
+                counter === id ? classes.selected10000 : null,
+                back === id ? classes.back10000 : null,
+            ].join(" ");
+        }
     };
 
-    let content = images.map((img) => {
-        return (
-            <img
-                className={getClasses(img.id)}
-                src={img.photo}
-                alt={img.alt}
-            ></img>
-        );
-    });
+    let content;
+
+    switch (type) {
+        case "images":
+            content = payload.map((img) => {
+                return (
+                    <img
+                        className={getClasses(img.id)}
+                        src={img.photo}
+                        alt={img.alt}
+                    ></img>
+                );
+            });
+            break;
+        case "texts":
+            content = payload.map((txt) => {
+                return <p className={getClasses(txt.id)}>{txt.content}</p>;
+            });
+            break;
+        default:
+            content = <p>Wrong type of Slides!</p>;
+    }
 
     return (
         <React.Fragment>
@@ -67,7 +89,7 @@ const Slides = (props) => {
                     </div>
                 </div>
                 {content}
-                <Indicator selected={counter} images={images}></Indicator>
+                <Indicator selected={counter} images={payload}></Indicator>
             </div>
         </React.Fragment>
     );

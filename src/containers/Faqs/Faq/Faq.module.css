@@ -12,10 +12,10 @@
 .button {
     border: 1px solid #b8b8b8;
     border-radius: 2.5vw;
-    width: 6vw;
-    height: 6vw;
-    min-width: 22px;
-    min-height: 22px;
+    width: 4vw;
+    height: 4vw;
+    min-width: 15px;
+    min-height: 15px;
     background-color: white;
     margin-left: 5vw;
     padding: 0.8vw;
