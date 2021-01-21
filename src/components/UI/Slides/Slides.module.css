@@ -43,6 +43,12 @@
     font-weight: 100;
 }
 
+.svg {
+    width: 65vw;
+    transform: translateX(-110vw);
+    position: absolute;
+}
+
 .selected5000 {
     animation: photoSlideForward 5s ease-out forwards;
     z-index: 2;
@@ -51,12 +57,12 @@
     animation: photoSlideBack 5s ease-out forwards;
 }
 
-.selected10000 {
-    animation: photoSlideForward 10s ease-out forwards;
+.selected15000 {
+    animation: photoSlideForward 15s ease-out forwards;
     z-index: 2;
 }
-.back10000 {
-    animation: photoSlideBack 10s ease-out forwards;
+.back15000 {
+    animation: photoSlideBack 15s ease-out forwards;
 }
 
 @keyframes photoSlideForward {

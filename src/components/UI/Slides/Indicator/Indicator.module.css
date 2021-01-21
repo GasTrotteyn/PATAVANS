@@ -4,21 +4,44 @@
     align-items: center;
     position: relative;
     margin-top: 65vw;
-    width: 40px;
+    min-width: 12vw;
+    z-index: 3;
+}
+
+.containerLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 65vw;
+    right: 11vw;
+    min-width: 12vw;
+    z-index: 3;
+}
+
+.containerSvg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 27vw;
+    min-width: 9vw;
     z-index: 3;
 }
 
 .bubble {
-    width: 7px;
-    height: 7px;
+    width: 2vw;
+    height: 2vw;
     background-color: rgb(209, 209, 208);
     border-radius: 50%;
+    margin-left: 2vw;
     transition: all 0.4s linear;
 }
 
 .selected {
-    width: 10px;
-    height: 10px;
+    width: 3vw;
+    height: 3vw;
     background-color: rgb(245, 168, 26);
     border-radius: 50%;
+    margin-left: 2vw;
 }

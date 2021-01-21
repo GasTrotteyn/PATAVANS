@@ -1,6 +1,6 @@
 import React from "react";
 //import classes from "./Layout.module.css";
-import Header from "./Header";
+import Header from "../containers/Header/Header";
 import Carousel from "../containers/Carousel/Carousel";
 import RightPiece from "../components/Pieces/RightPiece/RightPiece";
 import LeftPiece from "../components/Pieces/LeftPiece/LeftPiece";
@@ -16,6 +16,7 @@ import Faqs from "../containers/Faqs/Faqs";
 import Testimonials from "../containers/Testimonials/Testimonials";
 import Iframe from "../components/UI/Iframe/Iframe";
 import IconHomeSection from "./IconsHome/IconsHomeSection";
+import Partners from "../containers/Partners/Partners";
 
 const Layout = (props) => {
     return (
@@ -59,6 +60,27 @@ const Layout = (props) => {
             <Testimonials></Testimonials>
             <IconHomeSection></IconHomeSection>
             <Iframe></Iframe>
+            <Partners></Partners>
+            <div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
         </React.Fragment>
     );
 };

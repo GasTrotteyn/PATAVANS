@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Header.module.css";
-import Nav from "./Navigation/Nav/Nav";
+import Nav from "../../containers/Navigation/Nav/Nav";
 
 const Header = (props) => {
     return (

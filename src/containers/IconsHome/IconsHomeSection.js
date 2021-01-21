@@ -36,7 +36,12 @@ const IconSection = (props) => {
 
     const content = icons.map((icon) => {
         return (
-            <IconBox key={icon.id} title={icon.title} src={icon.src}></IconBox>
+            <IconBox
+                key={icon.id}
+                title={icon.title}
+                src={icon.src}
+                subtitle={icon.subtitle}
+            ></IconBox>
         );
     });
     return <div className={classes.container}>{content}</div>;
