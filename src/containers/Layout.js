@@ -17,6 +17,7 @@ import Testimonials from "../containers/Testimonials/Testimonials";
 import Iframe from "../components/UI/Iframe/Iframe";
 import IconHomeSection from "./IconsHome/IconsHomeSection";
 import Partners from "../containers/Partners/Partners";
+import Footer from "../containers/Footer/Footer";
 
 const Layout = (props) => {
     return (
@@ -61,7 +62,26 @@ const Layout = (props) => {
             <IconHomeSection></IconHomeSection>
             <Iframe></Iframe>
             <Partners></Partners>
+            <Footer></Footer>
             <div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
