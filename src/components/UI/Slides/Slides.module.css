@@ -24,15 +24,15 @@
 }
 
 .photo {
-    max-height: 57vw;
+    height: 57vw;
     max-width: 90vw;
     box-shadow: 0px 2vw 2vw #b6b5b5;
-    transform: translateX(-110vw);
+    transform: translateX(100vw);
     position: absolute;
 }
 
 .text {
-    transform: translateX(-110vw);
+    transform: translateX(100vw);
     position: absolute;
     background-color: transparent;
     width: 60vw;
@@ -45,12 +45,12 @@
 
 .svg {
     width: 65vw;
-    transform: translateX(-110vw);
+    transform: translateX(100vw);
     position: absolute;
 }
 
 .selected5000 {
-    animation: photoSlideForward 5s ease-out forwards;
+    animation: photoSlideForward 5.3s ease-out forwards;
     z-index: 2;
 }
 .back5000 {
@@ -71,13 +71,16 @@
         transform: translateX(100vw);
     }
 
-    20% {
+    15% {
         opacity: 1;
         transform: translateX(0);
     }
-    90% {
+    85% {
         opacity: 1;
         transform: translateX(0);
+    }
+    95% {
+        opacity: 0;
     }
     100% {
         opacity: 0;

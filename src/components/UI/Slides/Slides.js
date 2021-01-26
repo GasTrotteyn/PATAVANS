@@ -14,8 +14,10 @@ const Slides = (props) => {
     const onForward = useCallback(() => {
         if (counter < payload.length) {
             setCounter((prev) => prev + 1);
+            setBack(null);
         } else {
             setCounter(1);
+            setBack(null);
         }
     }, [counter, payload]);
 
