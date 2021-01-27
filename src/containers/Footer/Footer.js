@@ -7,8 +7,8 @@ import iconInstagram from "../../Assests/optimized/icon-instagram.svg";
 const Footer = (props) => {
     return (
         <div className={classes.container}>
-            <div className={classes.forest}></div>
             <div className={classes.gradient}></div>
+            <div className={classes.forest}></div>
             <img
                 className={classes.footerBrand}
                 src={footerBrand}

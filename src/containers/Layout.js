@@ -29,6 +29,7 @@ const Layout = (props) => {
                 title="We just build your dream"
                 paragraph1="Van conversions, uniquely designed and built using sustainably sourced wood, ceramics, metal, and old world craftsmanship."
                 srcPhoto={window}
+                photoOnlyDesktop
                 altPhoto="kitchen window with a river"
                 btnMessage="about us"
             ></RightPiece>
@@ -63,44 +64,6 @@ const Layout = (props) => {
             <Iframe></Iframe>
             <Partners></Partners>
             <Footer></Footer>
-            <div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-            </div>
         </React.Fragment>
     );
 };

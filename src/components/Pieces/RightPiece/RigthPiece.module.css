@@ -35,3 +35,8 @@
     margin-top: 7vw;
     max-height: 100vw;
 }
+
+/* display this photo in 480px onwards */
+.photoOnlyDesktop {
+    display: none;
+}

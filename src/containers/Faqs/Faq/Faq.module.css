@@ -19,6 +19,7 @@
     background-color: white;
     margin-left: 5vw;
     padding: 0.8vw;
+    overflow: hidden;
 }
 .button img {
     width: 100%;

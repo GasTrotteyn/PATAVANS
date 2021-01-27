@@ -9,8 +9,8 @@ const Header = (props) => {
             <div className={classes.estrellas}></div>
             <h1
                 style={{
-                    "font-family": "Gilroy-Bold ☞",
-                    "font-weight": "normal",
+                    fontFamily: "Gilroy-Bold ☞",
+                    fontWeight: "normal",
                 }}
             >
                 LIFE IS A JOURNEY.<br></br> YOU DESERVE THE BEST ONE

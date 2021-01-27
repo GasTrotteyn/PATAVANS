@@ -1,5 +1,5 @@
 .container {
-    margin-top: 50px;
+    margin-top: 15vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -8,8 +8,8 @@
 .link {
     position: absolute;
     background-color: white;
-    padding: 10px 25px;
-    top: 165px;
+    padding: 3vw 8vw;
+    top: 33vw;
 }
 
 .photo {
