@@ -2,6 +2,7 @@
 * {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    /* TO HIDE AND PREVENT SCROLL OVER THE OUTSIDE -
+    NOTE: you need to use max-width: 100% and position: relative in index.css too*/
     overflow-x: hidden;
-    /* max-width: 100%; */
 }

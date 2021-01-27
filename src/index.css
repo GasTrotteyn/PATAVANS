@@ -5,8 +5,8 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* TO HIDE AND PREVENT SCROLL OVER THE OUTSIDE*/
-    overflow-x: hidden;
+    /* TO HIDE AND PREVENT SCROLL OVER THE OUTSIDE -
+    NOTE: you need to use overflow-x:hidden in app.css too*/
     max-width: 100%;
     position: relative;
 }
