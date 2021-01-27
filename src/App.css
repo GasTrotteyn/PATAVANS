@@ -6,3 +6,6 @@
     NOTE: you need to use max-width: 100% and position: relative in index.css too*/
     overflow-x: hidden;
 }
+.App {
+    margin: auto;
+}
