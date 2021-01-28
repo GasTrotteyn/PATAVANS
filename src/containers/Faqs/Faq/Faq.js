@@ -33,7 +33,9 @@ const Faq = (props) => {
     return (
         <div className={classes.container}>
             <div className={classes.titleStrip}>
-                <h3 className={classes.question}>{props.question}</h3>
+                <h3 className={classes.question} onClick={props.onClicked}>
+                    {props.question}
+                </h3>
                 <div className={classes.button} onClick={props.onClicked}>
                     {props.clicked ? (
                         <img src={iconClose} alt="icon close"></img>
