@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Sidedrawer.module.css";
+import iconClose from "../../../../Assests/optimized/icon-closed-w.svg";
 // import { NavLink } from "react-router-dom";
 
 const SideDrawer = (props) => {
@@ -44,7 +45,12 @@ const SideDrawer = (props) => {
 
     return (
         <div className={classesArray} onClick={clicked}>
-            <ul className={classes.navItems}>{content}</ul>
+            <ul className={classes.navItems}>
+                <li className={classes.navItem} onClick={clicked}>
+                    <img src={iconClose} alt="icon close"></img>
+                </li>
+                {content}
+            </ul>
         </div>
     );
 };

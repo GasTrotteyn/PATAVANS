@@ -8,9 +8,9 @@ const BurgerIcon = (props) => {
     ].join(" ");
     return (
         <div className={classesArray} onClick={props.clicked}>
+            <div className={classes.firstLine}></div>
             <div></div>
-            <div></div>
-            <div></div>
+            <div className={classes.lastLine}></div>
         </div>
     );
 };

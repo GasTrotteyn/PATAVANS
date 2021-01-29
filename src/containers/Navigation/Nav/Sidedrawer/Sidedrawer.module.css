@@ -1,7 +1,7 @@
 .container {
     flex-direction: column;
     width: 100vw;
-    background-color: rgba(10, 32, 71, 0.95);
+    background-color: rgba(10, 32, 71, 0.9);
     display: none;
     z-index: 3;
     position: absolute;
@@ -11,6 +11,11 @@
 
 .show {
     display: flex;
+}
+
+.navItem img {
+    width: 30px;
+    height: 30px;
 }
 
 .navItems {
