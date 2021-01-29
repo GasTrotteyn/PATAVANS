@@ -1,4 +1,4 @@
-.contenedor {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: top;
@@ -8,4 +8,11 @@
 .title {
     height: 6vw;
     max-height: 30px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        align-items: center;
+        padding: 20px;
+    }
 }

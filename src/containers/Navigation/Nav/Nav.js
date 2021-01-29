@@ -8,7 +8,7 @@ const Nav = (props) => {
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <nav className={classes.contenedor}>
+        <nav className={classes.container}>
             <img className={classes.title} src={Brand} alt="brand"></img>
             <BurgerIcon
                 hidden={openMenu}

@@ -6,7 +6,7 @@ const Header = (props) => {
     return (
         <div className={classes.container}>
             <Nav></Nav>
-            <div className={classes.estrellas}></div>
+            <div className={classes.sky}></div>
             <h1
                 style={{
                     fontFamily: "Gilroy-Bold ☞",
