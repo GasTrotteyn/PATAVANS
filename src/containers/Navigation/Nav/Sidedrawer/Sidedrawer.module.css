@@ -29,6 +29,10 @@
     color: #ffffff;
     font-size: 16px;
 }
+
+.noCross {
+    display: none;
+}
 .navItem a {
     text-decoration: none;
     color: #ffffff;
