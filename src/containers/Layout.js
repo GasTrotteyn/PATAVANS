@@ -7,7 +7,7 @@ import LeftPiece from "../components/Pieces/LeftPiece/LeftPiece";
 import window from "../Assests/optimized/img-home-about.jpg";
 import ConversionOptions from "../containers/ConversionsOptions/ConversionsOptions";
 import Video from "../components/Video/Video";
-import ceramics from "../Assests/optimized/ceramic-main1.png";
+import ceramics from "../Assests/optimized/ceramic-main4.png";
 import ceramicIcon from "../Assests/optimized/bg-icon-decor.png";
 import bedIcon from "../Assests/optimized/bg-icon-foot.png";
 import bedExtension from "..//Assests/optimized/img-feature-bedextension3.png";

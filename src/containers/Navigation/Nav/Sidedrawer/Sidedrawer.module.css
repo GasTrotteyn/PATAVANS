@@ -1,0 +1,28 @@
+.container {
+    flex-direction: column;
+    width: 40vw;
+    background-color: rgba(10, 32, 71, 0.95);
+    display: none;
+    z-index: 3;
+    position: absolute;
+    left: 55vw;
+}
+
+.show {
+    display: flex;
+}
+
+.navItems {
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    text-align: end;
+    margin: 5vw;
+    color: #ffffff;
+}
+
+/* .active{
+
+} */

@@ -15,7 +15,11 @@
     background-color: #ffffff;
 }
 
-@media (min-width: 559px) {
+.hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
     .BurgerIcon {
         display: none;
     }

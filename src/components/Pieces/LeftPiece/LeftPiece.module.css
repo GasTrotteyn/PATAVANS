@@ -2,7 +2,7 @@
     padding: 13vw 5vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .titleStrip {
@@ -33,7 +33,7 @@
 .photo {
     max-width: 100%;
     margin-top: 7vw;
-    max-height: 100vw;
+    max-height: 80vw;
 }
 .photoLeft {
     display: none;
@@ -42,7 +42,7 @@
     max-height: 100vw;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
     .photo {
         display: none;
     }
