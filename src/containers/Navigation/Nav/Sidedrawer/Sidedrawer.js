@@ -24,7 +24,15 @@ const SideDrawer = (props) => {
                 }}
             >
                 {/* <NavLink to={item.path} activeClassName={classes.active}> */}
-                {item.title}
+                <a
+                    style={{
+                        fontFamily: "Gilroy-Bold ☞",
+                        fontWeight: "light",
+                    }}
+                    href="https://www.google.com/"
+                >
+                    {item.title}
+                </a>
                 {/* </NavLink> */}
             </li>
         );
