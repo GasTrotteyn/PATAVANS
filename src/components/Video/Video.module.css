@@ -1,8 +1,10 @@
 .container {
     width: 100vw;
+    height: 56vw;
     margin: 5vw 0;
     box-shadow: 0px 2vw 2vw #b6b5b5;
     position: relative;
+    overflow-y: hidden;
 }
 .title {
     position: absolute;
@@ -16,5 +18,21 @@
 }
 
 .video {
-    width: 100vw;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        box-shadow: 0px 10px 10px #b6b5b5;
+    }
+    .title {
+        display: none;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        width: 1170px;
+        height: 662px;
+    }
 }

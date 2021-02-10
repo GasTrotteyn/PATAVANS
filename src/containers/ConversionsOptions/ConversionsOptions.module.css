@@ -44,3 +44,58 @@
     position: relative;
     bottom: 0.4vw;
 }
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: -25vw;
+        z-index: 3;
+    }
+
+    .sectionTitle {
+        font-size: 40px;
+        color: white;
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        max-width: 320px;
+        margin: 0 14px;
+    }
+
+    .boxTitle {
+        font-size: 30px;
+        font-weight: 700;
+        top: 10%;
+    }
+
+    .description {
+        padding: 14px;
+        font-weight: 200;
+        font-size: 14px;
+        bottom: 0.4vw;
+    }
+    .photo {
+        max-height: 188px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        margin-top: -250px;
+    }
+
+    .boxTitle {
+        top: 18%;
+    }
+
+    .description {
+        padding: 14px;
+        font-weight: 200;
+        font-size: 14px;
+        bottom: 0.4vw;
+    }
+}

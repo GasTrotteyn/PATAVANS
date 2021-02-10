@@ -13,3 +13,16 @@
 .arrow {
     width: 6vw;
 }
+
+@media (min-width: 768px) {
+    .Button {
+        width: 100px;
+        height: 32px;
+        padding-bottom: 2px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    .arrow {
+        width: 16px;
+    }
+}

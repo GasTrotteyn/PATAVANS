@@ -28,6 +28,7 @@ const Layout = (props) => {
                 flag="WHAT WE DO"
                 title="We just build your dream"
                 paragraph1="Van conversions, uniquely designed and built using sustainably sourced wood, ceramics, metal, and old world craftsmanship."
+                paragraph2="Van conversions, uniquely designed and built using sustainably sourced wood, ceramics, metal, and old world craftsmanship."
                 srcPhoto={window}
                 photoOnlyDesktop
                 altPhoto="kitchen window with a river"

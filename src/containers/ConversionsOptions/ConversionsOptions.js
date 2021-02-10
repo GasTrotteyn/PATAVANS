@@ -11,7 +11,7 @@ const Conversions = (props) => {
             src: interior1,
             alt: "interior1",
             description:
-                "Custom woodwork, custom cabinetry, electrical amenities, and a ventilation system will make your next excursionluxurious.",
+                "Custom woodwork, custom cabinetry, electrical amenities, and a ventilation system will make your next excursion luxurious.",
         },
         {
             title: "FULL",
@@ -45,7 +45,7 @@ const Conversions = (props) => {
     return (
         <section className={classes.container}>
             <h2 className={classes.sectionTitle}>CONVERSION OPTIONS</h2>
-            {content}
+            <div className={classes.boxes}>{content}</div>
         </section>
     );
 };

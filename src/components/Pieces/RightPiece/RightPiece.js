@@ -16,6 +16,12 @@ const Piece = (props) => {
         altPhoto,
         photoOnlyDesktop,
     } = props;
+
+    const classesArray = [
+        classes.photo,
+        photoOnlyDesktop ? classes.photoOnlyDesktop : null,
+    ].join(" ");
+
     return (
         <article className={classes.container}>
             <div className={classes.text}>
@@ -35,7 +41,11 @@ const Piece = (props) => {
                 <Button onClick={onClick}>{btnMessage}</Button>
             </div>
             {photoOnlyDesktop ? (
-                <div className={classes.photoOnlyDesktop}></div>
+                <img
+                    className={classesArray}
+                    src={srcPhoto}
+                    alt={altPhoto}
+                ></img>
             ) : (
                 <img
                     className={classes.photo}
