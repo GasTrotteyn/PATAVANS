@@ -45,3 +45,26 @@
     border-radius: 50%;
     margin-left: 2vw;
 }
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 64vw;
+        min-width: 70px;
+    }
+    .bubble {
+        width: 9px;
+        height: 9px;
+        margin-left: 7px;
+    }
+    .selected {
+        width: 14px;
+        height: 14px;
+        margin-left: 7px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        margin-top: 800px;
+    }
+}

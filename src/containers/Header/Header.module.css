@@ -59,6 +59,9 @@ h1 {
 @media (min-width: 768px) {
     .container {
         height: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .sky {
         background-position: center top;
@@ -74,6 +77,8 @@ h1 {
     .description {
         top: 58vw;
         font-size: 30px;
+        max-width: 723px;
+        margin: auto;
     }
 }
 
@@ -97,7 +102,7 @@ h1 {
         font-size: 3vw;
     }
     .description {
-        top: 37vw;
+        top: 39vw;
         font-size: 33px;
         margin: 0 15vw;
     }

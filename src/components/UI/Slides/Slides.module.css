@@ -50,7 +50,7 @@
 
 @media (prefers-color-scheme: dark) {
     .text {
-        color: rgb(231, 29, 29);
+        color: #000000;
     }
 }
 
@@ -160,5 +160,52 @@
     100% {
         opacity: 0;
         transform: translateX(-8vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .photo {
+        max-height: 55vw;
+        max-width: 80vw;
+    }
+    .controls {
+        width: 90vw;
+    }
+    .control {
+        width: 30px;
+    }
+    @keyframes photoSlideForward {
+        0% {
+            opacity: 0;
+            transform: translateX(100vw);
+        }
+
+        25% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        75% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        95% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-100vw);
+        }
+    }
+}
+@media (min-width: 1170px) {
+    .photo {
+        max-height: 642px;
+        max-width: 935px;
+    }
+    .controls {
+        width: 1100px;
+    }
+    .control {
+        width: 30px;
     }
 }

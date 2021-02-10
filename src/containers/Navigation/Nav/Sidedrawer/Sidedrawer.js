@@ -6,6 +6,15 @@ import iconClose from "../../../../Assests/optimized/icon-closed-w.svg";
 const SideDrawer = (props) => {
     const { show, clicked } = props;
 
+    //let classesArray;
+
+    // useEffect(() => {
+    //     classesArray = [
+    //         classes.container,
+    //         show ? classes.show : classes.out,
+    //     ].join(" ");
+    // }, []);
+
     const navItems = [
         { title: "HOME", path: "/" },
         { title: "CONVERSION KITS", path: "/" },
@@ -40,9 +49,10 @@ const SideDrawer = (props) => {
         );
     });
 
-    const classesArray = [classes.container, show ? classes.show : null].join(
-        " "
-    );
+    const classesArray = [
+        classes.container,
+        show ? classes.show : classes.out,
+    ].join(" ");
     const classesCross = [classes.navItem, !show ? classes.noCross : null].join(
         " "
     );

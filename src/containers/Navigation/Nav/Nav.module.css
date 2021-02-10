@@ -12,7 +12,9 @@
 
 @media (min-width: 768px) {
     .container {
+        width: 100vw;
         align-items: center;
         padding: 20px;
+        box-sizing: border-box;
     }
 }

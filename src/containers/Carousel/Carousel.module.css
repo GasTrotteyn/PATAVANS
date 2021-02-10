@@ -2,3 +2,15 @@
     position: relative;
     margin: 35vw auto 0;
 }
+
+@media (min-width: 768px) {
+    .container {
+        margin: 26vw 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        margin: 35vw 0;
+    }
+}
