@@ -17,3 +17,35 @@
     vertical-align: -webkit-baseline-middle;
     max-width: 100vw;
 }
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 10vw;
+        width: 100%;
+        max-width: 935px;
+        border: 1px solid red;
+    }
+    .photos {
+        width: 100%;
+        border: 1px dotted blue;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .photo {
+        width: 25%;
+    }
+    .longPhoto {
+        width: 50%;
+    }
+    .link {
+        padding: 9px 18px;
+        top: 46%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 80px;
+    }
+}

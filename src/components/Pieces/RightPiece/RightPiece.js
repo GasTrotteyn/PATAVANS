@@ -40,6 +40,7 @@ const Piece = (props) => {
                 <p className={classes.paragraph}>{paragraph2}</p>
                 <Button onClick={onClick}>{btnMessage}</Button>
             </div>
+
             {photoOnlyDesktop ? (
                 <img
                     className={classesArray}
@@ -53,6 +54,11 @@ const Piece = (props) => {
                     alt={altPhoto}
                 ></img>
             )}
+            <img
+                className={classes.iconDesktop}
+                src={srcIcon}
+                alt={altIcon}
+            ></img>
         </article>
     );
 };

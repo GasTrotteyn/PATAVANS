@@ -43,13 +43,48 @@
 }
 
 @media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 10vw;
+        max-width: 80vw;
+    }
     .photo {
         display: none;
     }
     .photoLeft {
         display: block;
+        margin: 0;
+        height: 85%;
+        width: 47%;
     }
+    .flag {
+        font-size: 14px;
+        margin: 14px 0 0 0;
+    }
+
+    .title {
+        font-size: 30px;
+        margin: 5px 0 0 0;
+    }
+    .paragraph {
+        font-size: 14px;
+        margin: 14px 20px 14px 0;
+    }
+    .text {
+        margin: 0;
+        width: 47%;
+    }
+    .icon {
+        margin-left: 30px;
+        max-height: 60px;
+        max-width: 65px;
+    }
+}
+@media (min-width: 1170px) {
     .container {
-        flex-direction: row;
+        width: 935px;
+        margin: 80px 0 0 0;
     }
 }

@@ -5,12 +5,12 @@
 
 @media (min-width: 768px) {
     .container {
-        margin-top: 26vw 0;
+        margin-top: 26vw;
     }
 }
 
 @media (min-width: 1500px) {
     .container {
-        margin-top: 35vw 0;
+        margin-top: 35vw;
     }
 }

@@ -6,7 +6,6 @@ import gal3 from "../../../Assests/gal3.jpg";
 import gal4 from "../../../Assests/gal4.jpg";
 import gal5 from "../../../Assests/gal5.jpg";
 import gal6 from "../../../Assests/gal6.jpg";
-import gal7 from "../../../Assests/gal7.jpg";
 
 const HomeGallery = (props) => {
     const photoList = [
@@ -16,14 +15,17 @@ const HomeGallery = (props) => {
         { src: gal4, alt: "gal4" },
         { src: gal5, alt: "gal5" },
         { src: gal6, alt: "gal6" },
-        { src: gal7, alt: "gal7" },
     ];
     const content = photoList.map((photo) => (
         <img
             key={photo.alt}
             src={photo.src}
             alt={photo.alt}
-            className={classes.photo}
+            className={
+                photo.alt === "gal1" || photo.alt === "gal6"
+                    ? classes.longPhoto
+                    : classes.photo
+            }
         ></img>
     ));
     return (
