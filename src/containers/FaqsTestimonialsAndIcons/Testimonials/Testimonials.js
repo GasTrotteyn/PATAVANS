@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Testimonials.module.css";
-import Slides from "../../components/UI/Slides/Slides";
-import backTestimonials from "../../Assests/optimized/bg-testimonial.svg";
+import Slides from "../../../components/UI/Slides/Slides";
+import backTestimonials from "../../../Assests/optimized/bg-testimonial.svg";
 
 const Testimonials = (props) => {
     const list = [

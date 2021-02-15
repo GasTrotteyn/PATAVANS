@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./IconsHomeSection.module.css";
-import iconClock from "../../Assests/optimized/icon-clock.svg";
-import iconShield from "../../Assests/optimized/icon-shield.svg";
-import iconSolarPanel from "../../Assests/optimized/icon-solarpanel.svg";
-import iconUmbrella from "../../Assests/optimized/icon-umbrella.svg";
-import IconBox from "../../components/IconBox/IconBox";
+import iconClock from "../../../Assests/optimized/icon-clock.svg";
+import iconShield from "../../../Assests/optimized/icon-shield.svg";
+import iconSolarPanel from "../../../Assests/optimized/icon-solarpanel.svg";
+import iconUmbrella from "../../../Assests/optimized/icon-umbrella.svg";
+import IconBox from "../../../components/IconBox/IconBox";
 
 const IconSection = (props) => {
     const icons = [

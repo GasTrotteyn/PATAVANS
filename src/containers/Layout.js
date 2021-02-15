@@ -12,10 +12,8 @@ import ceramicIcon from "../Assests/optimized/bg-icon-decor.png";
 import bedIcon from "../Assests/optimized/bg-icon-foot.png";
 import bedExtension from "..//Assests/optimized/img-feature-bedextension3.png";
 import HomeGallery from "../containers/Gallery/HomeGallery/HomeGallery";
-import Faqs from "../containers/Faqs/Faqs";
-import Testimonials from "../containers/Testimonials/Testimonials";
+import FaqsTestIcon from "./FaqsTestimonialsAndIcons/FaqsTestIcon";
 import Iframe from "../components/UI/Iframe/Iframe";
-import IconHomeSection from "./IconsHome/IconsHomeSection";
 import Partners from "../containers/Partners/Partners";
 import Footer from "../containers/Footer/Footer";
 
@@ -59,9 +57,7 @@ const Layout = (props) => {
                 btnMessage="gallery"
             ></RightPiece>
             <HomeGallery></HomeGallery>
-            <Faqs></Faqs>
-            <Testimonials></Testimonials>
-            <IconHomeSection></IconHomeSection>
+            <FaqsTestIcon></FaqsTestIcon>
             <Iframe></Iframe>
             <Partners></Partners>
             <Footer></Footer>

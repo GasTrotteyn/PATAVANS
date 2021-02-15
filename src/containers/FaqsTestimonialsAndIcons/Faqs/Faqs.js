@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./Faqs.module.css";
 import Faq from "./Faq/Faq";
-import Button from "../../components/UI/Button/Button";
+import Button from "../../../components/UI/Button/Button";
 
 const Faqs = (props) => {
     const [faqList, setFaqList] = useState([

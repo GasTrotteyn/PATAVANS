@@ -87,9 +87,12 @@ const Slides = (props) => {
     };
 
     let content;
+    let controls;
+    let classContainer;
 
     switch (type) {
         case "images":
+            classContainer = classes.containerImg;
             content = payload.map((img) => {
                 return (
                     <img
@@ -100,8 +103,19 @@ const Slides = (props) => {
                     ></img>
                 );
             });
+            controls = (
+                <div className={classes.controlsImg}>
+                    <div className={classes.controlImg} onClick={onBack}>
+                        <img src={leftArrowWhite} alt={"left arrow"}></img>
+                    </div>
+                    <div className={classes.controlImg} onClick={onForward}>
+                        <img src={rightArrowWhite} alt={"left arrow"}></img>
+                    </div>
+                </div>
+            );
             break;
         case "texts":
+            classContainer = classes.containerTxt;
             content = payload.map((txt) => {
                 const signature =
                     "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + txt.signature;
@@ -112,8 +126,19 @@ const Slides = (props) => {
                     </div>
                 );
             });
+            controls = (
+                <div className={classes.controlsTxt}>
+                    <div className={classes.controlTxt} onClick={onBack}>
+                        <img src={leftArrowWhite} alt={"left arrow"}></img>
+                    </div>
+                    <div className={classes.controlTxt} onClick={onForward}>
+                        <img src={rightArrowWhite} alt={"left arrow"}></img>
+                    </div>
+                </div>
+            );
             break;
         case "svg":
+            classContainer = classes.containerSvg;
             content = payload.map((svg) => {
                 return (
                     <img
@@ -124,36 +149,31 @@ const Slides = (props) => {
                     ></img>
                 );
             });
+            controls = (
+                <div className={classes.controlsSvg}>
+                    <div className={classes.controlSvg} onClick={onBack}>
+                        <img src={leftArrow} alt={"left arrow"}></img>
+                    </div>
+                    <div className={classes.controlSvg} onClick={onForward}>
+                        <img src={rightArrow} alt={"left arrow"}></img>
+                    </div>
+                </div>
+            );
             break;
         default:
             content = <p>Wrong type of Slides!</p>;
     }
 
     return (
-        <React.Fragment>
-            <div className={classes.container}>
-                <div className={classes.controls}>
-                    <div className={classes.control} onClick={onBack}>
-                        <img
-                            src={type === "svg" ? leftArrow : leftArrowWhite}
-                            alt={"left arrow"}
-                        ></img>
-                    </div>
-                    <div className={classes.control} onClick={onForward}>
-                        <img
-                            src={type === "svg" ? rightArrow : rightArrowWhite}
-                            alt={"left arrow"}
-                        ></img>
-                    </div>
-                </div>
-                {content}
-                <Indicator
-                    type={type}
-                    selected={counter}
-                    payload={payload}
-                ></Indicator>
-            </div>
-        </React.Fragment>
+        <div className={classContainer}>
+            {controls}
+            {content}
+            <Indicator
+                type={type}
+                selected={counter}
+                payload={payload}
+            ></Indicator>
+        </div>
     );
 };
 

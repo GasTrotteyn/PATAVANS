@@ -19,7 +19,7 @@ const Indicator = (props) => {
             mainClass = classes.container;
             break;
         case "texts":
-            mainClass = classes.containerLeft;
+            mainClass = classes.containerText;
             break;
         case "svg":
             mainClass = classes.containerSvg;

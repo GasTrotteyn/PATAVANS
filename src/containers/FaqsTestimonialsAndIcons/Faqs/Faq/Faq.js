@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Faq.module.css";
-import iconPlus from "../../../Assests/optimized/icon-plus.svg";
-import iconClose from "../../../Assests/optimized/icon-close.svg";
+import iconPlus from "../../../../Assests/optimized/icon-plus.svg";
+import iconClose from "../../../../Assests/optimized/icon-close.svg";
 
 const Faq = (props) => {
     let answerToRender = null;
@@ -19,7 +19,6 @@ const Faq = (props) => {
                         {props.answer}{" "}
                         <a href="https://www.google.com/">{props.link2}</a>
                     </p>
-                    <br></br>
                     <br></br>
                     <p className={classes.paragraph}>
                         {props.answer2}{" "}

@@ -22,12 +22,10 @@
     .container {
         margin-top: 10vw;
         width: 100%;
-        max-width: 935px;
-        border: 1px solid red;
     }
     .photos {
         width: 100%;
-        border: 1px dotted blue;
+
         display: flex;
         flex-wrap: wrap;
     }
@@ -44,8 +42,9 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1170px) {
     .container {
         margin-top: 80px;
+        max-width: 1170px;
     }
 }

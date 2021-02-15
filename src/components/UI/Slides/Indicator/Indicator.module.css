@@ -8,7 +8,7 @@
     z-index: 3;
 }
 
-.containerLeft {
+.containerText {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +60,12 @@
         width: 14px;
         height: 14px;
         margin-left: 7px;
+    }
+    .containerText {
+        position: absolute;
+        margin-top: 30vw;
+        right: 22vw;
+        min-width: 7vw;
     }
 }
 
