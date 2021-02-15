@@ -26,3 +26,39 @@
     margin: 0;
     font-size: 4vw;
 }
+
+@media (min-width: 768px) {
+    .container {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 0;
+        overflow-x: visible;
+    }
+
+    .icon {
+        width: 80px;
+    }
+
+    .title {
+        color: #b8b8b8;
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .subtitle {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .icon {
+        width: 100px;
+    }
+}

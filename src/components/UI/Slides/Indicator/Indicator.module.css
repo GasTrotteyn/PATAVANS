@@ -73,4 +73,9 @@
     .container {
         margin-top: 730px;
     }
+    .containerText {
+        margin-top: 351px;
+        right: 270px;
+        min-width: 74px;
+    }
 }

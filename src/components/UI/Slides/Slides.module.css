@@ -274,13 +274,8 @@
     /* Case TEXT */
 
     .containerTxt {
-        margin: 0 auto 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 38vw;
-        position: relative;
         height: 40vw;
+        overflow-y: hidden;
     }
 
     .controlsTxt {
@@ -290,12 +285,12 @@
         display: flex;
         justify-content: space-between;
         z-index: 3;
-        top: 15vw;
+        top: 15.7vw;
         right: 1.6vw;
     }
 
     .controlTxt {
-        width: 2.5vw;
+        width: 2vw;
         cursor: pointer;
         text-align: center;
         font-size: 20px;
@@ -314,6 +309,8 @@
 /* 1170 px onwards  */
 
 @media (min-width: 1170px) {
+    /* Case IMG */
+
     .photo {
         max-height: 642px;
         max-width: 935px;
@@ -323,5 +320,27 @@
     }
     .controlImg {
         width: 30px;
+    }
+    /* Case TEXT */
+
+    .containerTxt {
+        height: 468px;
+    }
+
+    .controlsTxt {
+        width: 426px;
+        top: 183px;
+        right: 18.7px;
+    }
+
+    .controlTxt {
+        width: 23.4px;
+    }
+
+    .text {
+        width: 327px;
+        right: 82px;
+        top: 140px;
+        font-size: 16px;
     }
 }
