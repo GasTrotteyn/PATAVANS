@@ -8,6 +8,8 @@
 @media (min-width: 768px) {
     .container {
         margin: 0;
+        width: 90%;
+        border: 1px solid red;
     }
 }
 

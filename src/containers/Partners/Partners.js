@@ -16,7 +16,7 @@ const Partners = (props) => {
     return (
         <div className={classes.container}>
             <h2 className={classes.title}>OUR PARTNERS</h2>
-            <Slides payload={list} type={"svg"} time={5000}></Slides>
+            <Slides payload={list} type={"svg"} time={5000} showAll></Slides>
         </div>
     );
 };

@@ -223,6 +223,12 @@
     }
 }
 
+/* Classes that display all elements from the payload */
+
+.containerAll {
+    display: none;
+}
+
 /* Between 768 and 1170 px  */
 
 @media (min-width: 768px) {
@@ -303,6 +309,45 @@
         right: 7vw;
         top: 12vw;
         font-size: 1.4vw;
+    }
+
+    /* Case SVG */
+
+    .containerSvg {
+        display: none;
+    }
+
+    .containerAll {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid blue;
+    }
+
+    .svgAll {
+        width: 20%;
+
+        animation: svgSlideForward 5s ease-in-out infinite;
+    }
+
+    @keyframes svgSlideForward {
+        0% {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+
+        15% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        85% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
     }
 }
 

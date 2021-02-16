@@ -7,9 +7,9 @@ import leftArrow from "../../../Assests/optimized/arrow-left.svg";
 import rightArrow from "../../../Assests/optimized/arrow-right.svg";
 
 const Slides = (props) => {
-    // Only one element is show from the payload, below there's other option which show all of them //
+    // Only one element is displayed from the payload, below there's other option which show all of them //
 
-    const { payload, time, type } = props;
+    const { payload, time, type, showAll } = props;
     const [counter, setCounter] = useState(1);
     const [back, setBack] = useState(null);
 
@@ -166,16 +166,81 @@ const Slides = (props) => {
             content = <p>Wrong type of Slides!</p>;
     }
 
+    // This is the option which displays all the elements from the payload //
+
+    const [array, setArray] = useState(payload);
+
+    const onBackAll = useCallback(() => {
+        let modifiedArray = [...array];
+        const first = modifiedArray[0];
+        modifiedArray.push(first);
+        modifiedArray.splice(0, 1);
+        setArray(modifiedArray);
+    }, [array]);
+
+    const onForwardAll = () => {
+        let modifiedArray = [...array];
+        const last = modifiedArray[modifiedArray.length - 1];
+        modifiedArray.unshift(last);
+        modifiedArray.splice(-1, 1);
+        setArray(modifiedArray);
+    };
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            onBackAll();
+        }, time);
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [onBackAll, time]);
+
+    let controlsAll;
+    let contentAll;
+    let containerAll;
+
+    if (showAll) {
+        contentAll = array.map((svg) => {
+            return (
+                <img
+                    key={svg.id}
+                    className={classes.svgAll}
+                    src={svg.src}
+                    alt={svg.alt}
+                ></img>
+            );
+        });
+        controlsAll = (
+            <div className={classes.controlsSvg}>
+                <div className={classes.controlSvg} onClick={onBackAll}>
+                    <img src={leftArrow} alt={"left arrow"}></img>
+                </div>
+                <div className={classes.controlSvg} onClick={onForwardAll}>
+                    <img src={rightArrow} alt={"left arrow"}></img>
+                </div>
+            </div>
+        );
+        containerAll = (
+            <div className={classes.containerAll}>
+                {controlsAll}
+                {contentAll}
+            </div>
+        );
+    }
+
     return (
-        <div className={classContainer}>
-            {controls}
-            {content}
-            <Indicator
-                type={type}
-                selected={counter}
-                payload={payload}
-            ></Indicator>
-        </div>
+        <React.Fragment>
+            <div className={classContainer}>
+                {controls}
+                {content}
+                <Indicator
+                    type={type}
+                    selected={counter}
+                    payload={payload}
+                ></Indicator>
+            </div>
+            {containerAll}
+        </React.Fragment>
     );
 };
 
