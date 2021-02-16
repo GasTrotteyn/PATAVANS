@@ -7,6 +7,8 @@ import leftArrow from "../../../Assests/optimized/arrow-left.svg";
 import rightArrow from "../../../Assests/optimized/arrow-right.svg";
 
 const Slides = (props) => {
+    // Only one element is show from the payload, below there's other option which show all of them //
+
     const { payload, time, type } = props;
     const [counter, setCounter] = useState(1);
     const [back, setBack] = useState(null);

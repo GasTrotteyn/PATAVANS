@@ -53,6 +53,7 @@
         height: 450px;
         top: 0;
         right: 0;
+        overflow-y: hidden;
     }
 }
 
