@@ -210,19 +210,19 @@ const Slides = (props) => {
                 ></img>
             );
         });
-        controlsAll = (
-            <div className={classes.controlsSvg}>
-                <div className={classes.controlSvg} onClick={onBackAll}>
-                    <img src={leftArrow} alt={"left arrow"}></img>
-                </div>
-                <div className={classes.controlSvg} onClick={onForwardAll}>
-                    <img src={rightArrow} alt={"left arrow"}></img>
-                </div>
-            </div>
-        );
+        // controlsAll = (
+        //     <div className={classes.controlsSvg}>
+        //         <div className={classes.controlSvg} onClick={onBackAll}>
+        //             <img src={leftArrow} alt={"left arrow"}></img>
+        //         </div>
+        //         <div className={classes.controlSvg} onClick={onForwardAll}>
+        //             <img src={rightArrow} alt={"left arrow"}></img>
+        //         </div>
+        //     </div>
+        // );
         containerAll = (
             <div className={classes.containerAll}>
-                {controlsAll}
+                {/* {controlsAll} */}
                 {contentAll}
             </div>
         );

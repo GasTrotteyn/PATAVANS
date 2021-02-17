@@ -320,7 +320,6 @@
     .containerAll {
         display: flex;
         justify-content: space-evenly;
-        border: 1px solid blue;
     }
 
     .svgAll {
@@ -335,11 +334,11 @@
             transform: translateX(50%);
         }
 
-        15% {
+        8% {
             opacity: 1;
             transform: translateX(0);
         }
-        85% {
+        92% {
             opacity: 1;
             transform: translateX(0);
         }
@@ -361,7 +360,7 @@
         max-width: 935px;
     }
     .controlsImg {
-        width: 1100px;
+        width: 1050px;
     }
     .controlImg {
         width: 30px;

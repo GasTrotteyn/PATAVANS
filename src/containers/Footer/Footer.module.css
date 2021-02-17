@@ -33,6 +33,16 @@
     margin-top: 66vw;
 }
 
+.brandMediaLegalMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brandMediaLegalDesktop {
+    display: none;
+}
+
 .join {
     font-size: 5vw;
     color: #ffffff;
@@ -63,4 +73,106 @@
     color: #ffffff;
     margin-top: 8vw;
     font-size: 3.4vw;
+}
+
+@media (min-width: 768px) {
+    .container {
+        height: 45vw;
+        overflow-y: hidden;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* border: 1px solid blue; */
+    }
+
+    .gradient {
+        height: 8vw;
+    }
+
+    .forest {
+        background-size: 100%;
+        height: 100%;
+    }
+
+    .brandMediaLegalMobile {
+        display: none;
+    }
+
+    .brandMediaLegalDesktop {
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 3.2vw;
+        box-sizing: border-box;
+        /* padding-bottom: 3.2vw; */
+        /* border: 2px dotted violet; */
+        overflow-y: hidden;
+    }
+
+    .footerBrand {
+        width: 150px;
+        margin: 0;
+    }
+
+    .menuLegal {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        transform: translateY(2.2vw);
+        /* border: 1px solid green; */
+    }
+    .legal {
+        margin: 1.3vw 0 0 0;
+        font-size: 11px;
+        text-align: center;
+        /* border: 1px solid red; */
+    }
+    .menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu li {
+        margin-left: 15px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+    }
+    .socialMedia {
+        max-width: 120px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transform: translateY(-0.3vw);
+        /* border: 2px dotted yellow; */
+    }
+    .join {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .iconContainer {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+    }
+    .iconContainer img {
+        width: 20px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .brandMediaLegalDesktop {
+        width: 1170px;
+    }
+
+    .forest {
+        overflow-y: hidden;
+    }
 }
