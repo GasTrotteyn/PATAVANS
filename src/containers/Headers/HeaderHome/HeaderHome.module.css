@@ -8,7 +8,7 @@
     position: absolute;
     top: 0px;
     z-index: -2;
-    background-image: url("../../Assests/optimized/bg-sky.jpg");
+    /* background-image: url("../../../Assests/optimized/bg-sky.jpg"); */
     background-position: 60% top;
     background-size: 173%;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
     height: 135vw;
     position: absolute;
     top: 39.5vw;
-    background-image: url("../../Assests/optimized/bg-main.png");
+    background-image: url("../../../Assests/optimized/bg-main.png");
     background-position: center top;
     background-size: 125%;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
     font-style: normal;
     font-weight: normal;
     src: local("Gilroy-Bold ☞"),
-        url("../../Assests/fonts/Gilroy-Bold.woff") format("woff");
+        url("../../../Assests/fonts/Gilroy-Bold.woff") format("woff");
 }
 
 h1 {

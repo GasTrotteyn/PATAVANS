@@ -1,13 +1,13 @@
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: top;
-    padding: 5vw 5vw;
+    align-items: center;
+    padding: 3vw 3vw;
     z-index: 4;
 }
 .title {
-    height: 6vw;
-    max-height: 30px;
+    height: 3vw;
+    max-height: 20px;
 }
 
 @media (min-width: 768px) {
@@ -16,5 +16,20 @@
         align-items: center;
         padding: 20px;
         box-sizing: border-box;
+    }
+    .title {
+        max-height: 25px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+        padding: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        padding: 20px 0;
     }
 }

@@ -1,8 +1,8 @@
 .BurgerIcon {
-    width: 7vw;
-    max-width: 30px;
-    height: 7vw;
-    max-height: 30px;
+    width: 6vw;
+    max-width: 25px;
+    height: 6vw;
+    max-height: 20px;
     display: flex;
     flex-flow: column;
     justify-content: space-around;

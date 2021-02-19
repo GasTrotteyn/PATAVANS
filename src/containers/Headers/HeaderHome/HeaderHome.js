@@ -1,12 +1,25 @@
 import React from "react";
-import classes from "./Header.module.css";
-import Nav from "../../containers/Navigation/Nav/Nav";
+import classes from "./HeaderHome.module.css";
+import Nav from "../../Navigation/Nav/Nav";
+import sky from "../../../Assests/optimized/bg-sky.jpg";
+import lagoon from "../../../Assests/optimized/banner-about.jpg";
 
 const Header = (props) => {
+    let url = sky;
+
+    if (props.background === "2") {
+        url = lagoon;
+    }
+
     return (
         <div className={classes.container}>
             <Nav></Nav>
-            <div className={classes.sky}></div>
+            <div
+                style={{
+                    backgroundImage: "url(" + url + ")",
+                }}
+                className={classes.sky}
+            ></div>
             <h1
                 style={{
                     fontFamily: "Gilroy-Bold ☞",

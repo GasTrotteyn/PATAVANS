@@ -17,10 +17,10 @@ const SideDrawer = (props) => {
 
     const navItems = [
         { title: "HOME", path: "/" },
-        { title: "CONVERSION KITS", path: "/" },
-        { title: "GALLERY", path: "/" },
-        { title: "ABOUT US", path: "/" },
-        { title: "CONTACT", path: "/" },
+        { title: "CONVERSION KITS", path: "/conversions" },
+        { title: "GALLERY", path: "/gallery" },
+        { title: "ABOUT US", path: "/aboutUs" },
+        { title: "CONTACT", path: "/contact" },
     ];
 
     const content = navItems.map((item) => {
@@ -40,7 +40,7 @@ const SideDrawer = (props) => {
                         fontFamily: "Gilroy-Bold ☞",
                         fontWeight: "light",
                     }}
-                    href="https://www.google.com/"
+                    href={item.path}
                 >
                     {item.title}
                 </a>
