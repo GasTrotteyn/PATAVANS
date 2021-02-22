@@ -11,6 +11,8 @@
     padding: 3vw 8vw;
     top: 33vw;
     font-size: 4vw;
+    text-decoration: none;
+    color: black;
 }
 
 .photo {

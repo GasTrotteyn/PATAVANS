@@ -3,34 +3,43 @@ import classes from "./LeftPiece.module.css";
 import Button from "../../UI/Button/Button";
 
 const Piece = (props) => {
+    const {
+        flag,
+        title,
+        srcIcon,
+        altIcon,
+        paragraph1,
+        paragraph2,
+        btnMessage,
+        path,
+        srcPhoto,
+        altPhoto,
+    } = props;
+
     return (
         <article className={classes.container}>
             <img
                 className={classes.photoLeft}
-                src={props.srcPhoto}
-                alt={props.altPhoto}
+                src={srcPhoto}
+                alt={altPhoto}
             ></img>
             <div className={classes.text}>
                 <div className={classes.titleStrip}>
                     <div>
-                        <h4 className={classes.flag}>{props.flag}</h4>
-                        <h2 className={classes.title}>{props.title}</h2>
+                        <h4 className={classes.flag}>{flag}</h4>
+                        <h2 className={classes.title}>{title}</h2>
                     </div>
                     <img
                         className={classes.icon}
-                        src={props.srcIcon}
-                        alt={props.altIcon}
+                        src={srcIcon}
+                        alt={altIcon}
                     ></img>
                 </div>
-                <p className={classes.paragraph}>{props.paragraph1}</p>
-                <p className={classes.paragraph}>{props.paragraph2}</p>
-                <Button onClick={props.onClick}>{props.btnMessage}</Button>
+                <p className={classes.paragraph}>{paragraph1}</p>
+                <p className={classes.paragraph}>{paragraph2}</p>
+                <Button path={path}>{btnMessage}</Button>
             </div>
-            <img
-                className={classes.photo}
-                src={props.srcPhoto}
-                alt={props.altPhoto}
-            ></img>
+            <img className={classes.photo} src={srcPhoto} alt={altPhoto}></img>
         </article>
     );
 };

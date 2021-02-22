@@ -117,11 +117,11 @@ const Faqs = (props) => {
     });
 
     return (
-        <div className={classes.container}>
+        <div className={classes.container} id={"faqs"}>
             <h4 className={classes.flag}>FAQ</h4>
             <h2 className={classes.title}>We have the answers</h2>
             {content}
-            <Button>about us</Button>
+            <Button path={"/aboutUs"}>about us</Button>
         </div>
     );
 };

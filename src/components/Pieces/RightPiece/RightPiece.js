@@ -10,8 +10,8 @@ const Piece = (props) => {
         altIcon,
         paragraph1,
         paragraph2,
-        onClick,
         btnMessage,
+        path,
         srcPhoto,
         altPhoto,
         photoOnlyDesktop,
@@ -38,7 +38,7 @@ const Piece = (props) => {
                 </div>
                 <p className={classes.paragraph}>{paragraph1}</p>
                 <p className={classes.paragraph}>{paragraph2}</p>
-                <Button onClick={onClick}>{btnMessage}</Button>
+                <Button path={path}>{btnMessage}</Button>
             </div>
 
             {photoOnlyDesktop ? (

@@ -3,8 +3,27 @@ import classes from "./Footer.module.css";
 import footerBrand from "../../Assests/optimized/brand-footer.svg";
 import iconFacebook from "../../Assests/optimized/icon-facebook.svg";
 import iconInstagram from "../../Assests/optimized/icon-instagram.svg";
+import { NavLink } from "react-router-dom";
 
 const Footer = (props) => {
+    const navItems = [
+        { title: "Conversion Kits", path: "/conversions" },
+        { title: "Gallery", path: "/gallery" },
+        { title: "About Us", path: "/aboutUs" },
+        { title: "FAQ", path: "/#faqs" },
+        { title: "Contact us", path: "/contact" },
+    ];
+
+    const content = navItems.map((item) => {
+        return (
+            <li key={item.title}>
+                <NavLink to={item.path} activeClassName={classes.active}>
+                    {item.title}
+                </NavLink>
+            </li>
+        );
+    });
+
     return (
         <div className={classes.container}>
             <div className={classes.gradient}></div>
@@ -45,23 +64,8 @@ const Footer = (props) => {
                 ></img>
                 <div className={classes.menuLegal}>
                     <ul className={classes.menu}>
-                        <li>
-                            <a href={"https://www.google.com/"}>
-                                Conversion kits
-                            </a>
-                        </li>
-                        <li>
-                            <a href={"https://www.google.com/"}>Gallery</a>
-                        </li>
-                        <li>
-                            <a href={"https://www.google.com/"}>About us</a>
-                        </li>
-                        <li>
-                            <a href={"https://www.google.com/"}>FAQ</a>
-                        </li>
-                        <li>
-                            <a href={"https://www.google.com/"}>Contact us</a>
-                        </li>
+                        {content}
+                        {/* <a href={"#faqs"}>faqs</a> */}
                     </ul>
 
                     <p className={classes.legal}>

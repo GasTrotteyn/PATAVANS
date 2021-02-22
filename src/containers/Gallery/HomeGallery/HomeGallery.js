@@ -6,6 +6,7 @@ import gal3 from "../../../Assests/gal3.jpg";
 import gal4 from "../../../Assests/gal4.jpg";
 import gal5 from "../../../Assests/gal5.jpg";
 import gal6 from "../../../Assests/gal6.jpg";
+import { Link } from "react-router-dom";
 
 const HomeGallery = (props) => {
     const photoList = [
@@ -30,9 +31,9 @@ const HomeGallery = (props) => {
     ));
     return (
         <div className={classes.container}>
-            <div onClick={props.link} className={classes.link}>
+            <Link to={"/gallery"} className={classes.link}>
                 view full gallery
-            </div>
+            </Link>
             <div className={classes.photos}>{content}</div>
         </div>
     );

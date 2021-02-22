@@ -6,6 +6,7 @@ import Options from "./Pages/ConversionOptions/ConversionOptions";
 import Gallery from "./Pages/Gallery/Gallery";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Contact from "./Pages/Contact/Contact";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
     let routes = (
@@ -20,6 +21,7 @@ function App() {
 
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <div className="App">
                 <Layout>{routes}</Layout>
             </div>

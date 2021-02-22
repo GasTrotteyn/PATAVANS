@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Sidedrawer.module.css";
 import iconClose from "../../../../Assests/optimized/icon-closed-w.svg";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SideDrawer = (props) => {
     const { show, clicked } = props;
@@ -34,17 +34,16 @@ const SideDrawer = (props) => {
                     fontWeight: "light",
                 }}
             >
-                {/* <NavLink to={item.path} activeClassName={classes.active}> */}
-                <a
+                <Link
                     style={{
                         fontFamily: "Gilroy-Bold ☞",
                         fontWeight: "light",
                     }}
-                    href={item.path}
+                    to={item.path}
+                    activeClassName={classes.active}
                 >
                     {item.title}
-                </a>
-                {/* </NavLink> */}
+                </Link>
             </li>
         );
     });

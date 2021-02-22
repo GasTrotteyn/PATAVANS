@@ -2,33 +2,65 @@
     border: 1px solid #b8b8b8;
     width: 30vw;
     height: 10vw;
+    background-color: transparent;
+}
+
+.Button a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: transparent;
-    padding-bottom: 0.8vw;
+    text-decoration: none;
+    color: black;
+    margin-top: 1.8vw;
     box-sizing: border-box;
     font-size: 4vw;
+}
+.transparent a {
+    margin-top: 1vw;
 }
 
 .arrow {
     width: 6vw;
 }
 
+.arrowForTransparentGrey {
+    width: 6vw;
+    margin-top: 1vw;
+}
+
+.arrowForTransparentWhite {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .Button {
         width: 100px;
         height: 32px;
-        padding-bottom: 2px;
-        box-sizing: border-box;
+    }
+
+    .Button a {
+        margin-top: 8px;
         font-size: 14px;
     }
+
+    .transparent {
+        border: 1px solid white;
+    }
+
+    .transparent a {
+        color: white;
+    }
+
     .arrow {
         width: 16px;
     }
 
-    .transparent {
-        color: white;
-        border: 1px solid white;
+    .arrowForTransparentGrey {
+        display: none;
+    }
+
+    .arrowForTransparentWhite {
+        display: block;
+        width: 16px;
     }
 }

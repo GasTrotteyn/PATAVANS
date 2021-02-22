@@ -70,9 +70,9 @@
     color: #ffffff;
 }
 
-/* .active{
-
-} */
+.active {
+    color: rgb(189, 222, 250);
+}
 
 @media (min-width: 768px) {
     .out {

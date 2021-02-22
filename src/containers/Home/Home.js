@@ -28,6 +28,7 @@ const Home = (props) => {
                 photoOnlyDesktop
                 altPhoto="kitchen window with a river"
                 btnMessage="about us"
+                path="/aboutUs"
             ></RightPiece>
             <Video></Video>
             <ConversionOptions></ConversionOptions>
@@ -41,6 +42,7 @@ const Home = (props) => {
                 srcPhoto={ceramics}
                 altPhoto="handmade ceramics"
                 btnMessage="gallery"
+                path="/gallery"
             ></LeftPiece>
             <RightPiece
                 flag="BED EXTENSION"
@@ -52,6 +54,7 @@ const Home = (props) => {
                 srcPhoto={bedExtension}
                 altPhoto="bed extension"
                 btnMessage="gallery"
+                path="/gallery"
             ></RightPiece>
             <HomeGallery></HomeGallery>
             <FaqsTestIcon></FaqsTestIcon>
