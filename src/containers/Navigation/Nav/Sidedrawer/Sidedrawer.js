@@ -40,7 +40,6 @@ const SideDrawer = (props) => {
                         fontWeight: "light",
                     }}
                     to={item.path}
-                    activeClassName={classes.active}
                 >
                     {item.title}
                 </Link>

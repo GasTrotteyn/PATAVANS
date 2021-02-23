@@ -15,6 +15,7 @@ const Piece = (props) => {
         srcPhoto,
         altPhoto,
         photoOnlyDesktop,
+        noButton,
     } = props;
 
     const classesArray = [
@@ -38,7 +39,7 @@ const Piece = (props) => {
                 </div>
                 <p className={classes.paragraph}>{paragraph1}</p>
                 <p className={classes.paragraph}>{paragraph2}</p>
-                <Button path={path}>{btnMessage}</Button>
+                {noButton ? null : <Button path={path}>{btnMessage}</Button>}
             </div>
 
             {photoOnlyDesktop ? (

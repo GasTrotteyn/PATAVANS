@@ -178,13 +178,13 @@ const Slides = (props) => {
         setArray(modifiedArray);
     }, [array]);
 
-    const onForwardAll = () => {
-        let modifiedArray = [...array];
-        const last = modifiedArray[modifiedArray.length - 1];
-        modifiedArray.unshift(last);
-        modifiedArray.splice(-1, 1);
-        setArray(modifiedArray);
-    };
+    // const onForwardAll = () => {
+    //     let modifiedArray = [...array];
+    //     const last = modifiedArray[modifiedArray.length - 1];
+    //     modifiedArray.unshift(last);
+    //     modifiedArray.splice(-1, 1);
+    //     setArray(modifiedArray);
+    // };
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -195,7 +195,7 @@ const Slides = (props) => {
         };
     }, [onBackAll, time]);
 
-    let controlsAll;
+    // let controlsAll;
     let contentAll;
     let containerAll;
 

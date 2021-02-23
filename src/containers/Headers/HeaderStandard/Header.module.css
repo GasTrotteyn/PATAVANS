@@ -23,6 +23,7 @@
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-size: 4vw;
+    overflow-y: hidden;
 
     /* border: 1px solid green; */
 }
@@ -43,7 +44,14 @@
     }
 
     .texts {
+        width: 1170px;
         left: 0;
-        transform: translateX(-11vw);
+        padding-left: 4%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .texts {
+        padding: 0;
     }
 }

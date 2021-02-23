@@ -17,9 +17,7 @@ const Footer = (props) => {
     const content = navItems.map((item) => {
         return (
             <li key={item.title}>
-                <NavLink to={item.path} activeClassName={classes.active}>
-                    {item.title}
-                </NavLink>
+                <NavLink to={item.path}>{item.title}</NavLink>
             </li>
         );
     });

@@ -1,6 +1,6 @@
 import "./App.css";
 import Layout from "./containers/Layout";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import Options from "./Pages/ConversionOptions/ConversionOptions";
 import Gallery from "./Pages/Gallery/Gallery";
