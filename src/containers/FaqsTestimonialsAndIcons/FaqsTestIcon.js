@@ -13,26 +13,26 @@ const FaqsTestIcon = (props) => {
         {
             id: 1,
             title: "Fast Conversion",
-            subtitle: "2 weeks basics 5 weeks full*",
+            subtitles: ["2 weeks basics 5 weeks full*"],
             src: iconClock,
         },
         {
             id: 2,
-            title: "Feel Safe",
-            subtitle: "1 year warranty",
-            src: iconShield,
-        },
-        {
-            id: 3,
             title: "Off-grid solar power",
-            subtitle: "from 300 watts onwards",
+            subtitles: ["from 300 watts onwards"],
             src: iconSolarPanel,
         },
         {
-            id: 4,
+            id: 3,
             title: "Moisture Free",
-            subtitle: "With the best quality",
+            subtitles: ["With the best quality"],
             src: iconUmbrella,
+        },
+        {
+            id: 4,
+            title: "Feel Safe",
+            subtitles: ["1 year warranty"],
+            src: iconShield,
         },
     ];
 

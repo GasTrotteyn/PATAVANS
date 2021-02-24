@@ -14,16 +14,15 @@
 .title {
     color: #b8b8b8;
     text-align: center;
-    margin: 1vw 0;
+    margin: 1vw 0 2vw;
     font-size: 5vw;
     width: 50vw;
 }
 
 .subtitle {
     text-align: center;
-    width: 7em;
-    margin: 0;
-    font-size: 4vw;
+    margin: 0.3vw 0 0 0;
+    font-size: 3vw;
 }
 
 @media (min-width: 768px) {
@@ -59,7 +58,7 @@
 @media (min-width: 1170px) {
     .container {
         width: 210px;
-        margin: 2vw 0;
+        margin: 23px 0;
     }
     .icon {
         width: 100px;

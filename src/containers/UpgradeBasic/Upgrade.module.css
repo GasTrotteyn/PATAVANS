@@ -1,0 +1,17 @@
+.container {
+    width: 90vw;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 10vw 0 0 0;
+        max-width: 80vw;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        width: 935px;
+        margin: 80px 0 0 0;
+    }
+}

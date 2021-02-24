@@ -38,7 +38,13 @@ const Piece = (props) => {
                     ></img>
                 </div>
                 <p className={classes.paragraph}>{paragraph1}</p>
-                <p className={classes.paragraph}>{paragraph2}</p>
+                <p
+                    className={[classes.paragraph, classes.paragraph2].join(
+                        " "
+                    )}
+                >
+                    {paragraph2}
+                </p>
                 {noButton ? null : <Button path={path}>{btnMessage}</Button>}
             </div>
 
