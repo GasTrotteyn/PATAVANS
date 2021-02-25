@@ -16,6 +16,8 @@ import cedar from "../../../Assests/optimized/img-cedar-panel.png";
 import iconInterior from "../../../Assests/optimized/icon-interior.svg";
 import iconExterior from "../../../Assests/optimized/icon-exterior.svg";
 import iconElectrical from "../../../Assests/optimized/icon-electrical.svg";
+import Upgrade from "../../UpgradeBasic/Upgrade";
+import MoreAdds from "../../../components/MoreAdds/MoreAdds";
 
 const BasicKit = (props) => {
     const { clicked } = props;
@@ -85,7 +87,7 @@ const BasicKit = (props) => {
         <div className={classes.container}>
             <div className={classes.kitSelector}>
                 <div className={classes.buttons}>
-                    <div className={classes.title}>Basic</div>
+                    <div className={classes.title}>Basic Conversion</div>
                     <div className={classes.buttonGrey} onClick={clicked}>
                         Full Conversion
                     </div>
@@ -131,6 +133,8 @@ const BasicKit = (props) => {
                 title={"What a basic conversion includes"}
                 payload={icons2}
             ></IconSection>
+            <Upgrade></Upgrade>
+            <MoreAdds title={"More add-ons"}></MoreAdds>
         </div>
     );
 };

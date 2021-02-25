@@ -5,7 +5,9 @@ const IconBox = (props) => {
     const { src, alt, title, subtitles } = props;
 
     const subtitlesToShow = subtitles.map((subtitle) => (
-        <p className={classes.subtitle}>{subtitle}</p>
+        <p key={subtitle} className={classes.subtitle}>
+            {subtitle}
+        </p>
     ));
 
     return (
