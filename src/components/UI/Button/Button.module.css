@@ -19,6 +19,10 @@
     margin-top: 1vw;
 }
 
+.playIcon {
+    width: 6vw;
+}
+
 .arrow {
     width: 6vw;
 }
@@ -41,6 +45,10 @@
     .Button a {
         margin-top: 8px;
         font-size: 14px;
+    }
+
+    .playIcon {
+        width: 18px;
     }
 
     .transparent {

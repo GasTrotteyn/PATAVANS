@@ -16,6 +16,7 @@ const Piece = (props) => {
         altPhoto,
         photoOnlyDesktop,
         noButton,
+        buttonForVideo,
     } = props;
 
     const classesArray = [
@@ -45,7 +46,11 @@ const Piece = (props) => {
                 >
                     {paragraph2}
                 </p>
-                {noButton ? null : <Button path={path}>{btnMessage}</Button>}
+                {noButton ? null : (
+                    <Button path={path} forVideo={buttonForVideo}>
+                        {btnMessage}
+                    </Button>
+                )}
             </div>
 
             {photoOnlyDesktop ? (
@@ -61,11 +66,6 @@ const Piece = (props) => {
                     alt={altPhoto}
                 ></img>
             )}
-            <img
-                className={classes.iconDesktop}
-                src={srcIcon}
-                alt={altIcon}
-            ></img>
         </article>
     );
 };

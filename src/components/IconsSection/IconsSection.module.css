@@ -14,14 +14,14 @@
 
 .title {
     font-size: 5.5vw;
-    margin-top: 5vw;
+    margin: 5vw 0 0 0;
 }
 
 .subtitle {
-    color: #b8b8b8;
+    color: #8b8b8b;
     text-align: center;
     margin: 1vw 0;
-    font-size: 5vw;
+    font-size: 3.8vw;
 }
 
 .withBackground {
@@ -35,7 +35,11 @@
     }
     .title {
         font-size: 30px;
-        margin: 38px 0;
+        margin: 38px 0 0 0;
+    }
+
+    .subtitle {
+        font-size: 14px;
     }
     .boxes {
         justify-content: space-between;
@@ -43,7 +47,7 @@
     }
 
     .boxesOneLine {
-        width: 90%;
+        width: 100%;
         margin-bottom: 10px;
     }
 }

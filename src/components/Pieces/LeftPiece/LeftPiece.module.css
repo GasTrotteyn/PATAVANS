@@ -24,6 +24,7 @@
     color: black;
     margin: 0 0 10vw 0;
     font-size: 5.5vw;
+    max-width: 65vw;
 }
 
 .paragraph {
@@ -78,8 +79,7 @@
     }
     .icon {
         margin-left: 30px;
-        max-height: 60px;
-        max-width: 65px;
+        max-width: 60px;
     }
 }
 @media (min-width: 1170px) {

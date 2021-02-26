@@ -12,6 +12,7 @@ const IconSection = (props) => {
                 title={icon.title}
                 src={icon.src}
                 subtitles={icon.subtitles}
+                oneLine={oneLine}
             ></IconBox>
         );
     });
@@ -29,7 +30,7 @@ const IconSection = (props) => {
     return (
         <div className={classesContainer}>
             {title ? <h2 className={classes.title}>{title}</h2> : null}
-            {subtitle ? <h2 className={classes.title}>{subtitle}</h2> : null}
+            {subtitle ? <h4 className={classes.subtitle}>{subtitle}</h4> : null}
             <div className={classesBoxes}>{content}</div>
         </div>
     );

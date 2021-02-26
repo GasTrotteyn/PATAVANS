@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./IconBox.module.css";
 
 const IconBox = (props) => {
-    const { src, alt, title, subtitles } = props;
+    const { src, alt, title, subtitles, oneLine } = props;
 
     const subtitlesToShow = subtitles.map((subtitle) => (
         <p key={subtitle} className={classes.subtitle}>
@@ -10,8 +10,13 @@ const IconBox = (props) => {
         </p>
     ));
 
+    const classesContainer = [
+        classes.container,
+        oneLine ? classes.oneLine : null,
+    ].join(" ");
+
     return (
-        <div className={classes.container}>
+        <div className={classesContainer}>
             <img className={classes.icon} src={src} alt={alt}></img>
             <h4 className={classes.title}>{title}</h4>
             {subtitlesToShow}

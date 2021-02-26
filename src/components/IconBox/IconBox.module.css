@@ -9,6 +9,7 @@
 
 .icon {
     width: 18vw;
+    max-height: 14vw;
 }
 
 .title {
@@ -34,9 +35,13 @@
         margin: 4vw 0;
         overflow-x: visible;
     }
+    .oneLine {
+        width: 18%;
+    }
 
     .icon {
         width: 80px;
+        max-height: 65px;
     }
 
     .title {
@@ -57,7 +62,6 @@
 
 @media (min-width: 1170px) {
     .container {
-        width: 210px;
         margin: 23px 0;
     }
     .icon {
