@@ -22,6 +22,8 @@ import iconShower from "../../../Assests/optimized/icon-shower.svg";
 import iconExterior from "../../../Assests/optimized/icon-exterior.svg";
 import iconStove2 from "../../../Assests/optimized/icon-stove2.svg";
 
+import WeBuild from "../../../components/WeBuild/WeBuild";
+
 import MoreAdds from "../../../components/MoreAdds/MoreAdds";
 
 const BasicKit = (props) => {
@@ -165,6 +167,8 @@ const BasicKit = (props) => {
                 subtitle={"Everithing in your basic conversion, plus:"}
                 payload={icons2}
             ></IconSection>
+            <WeBuild></WeBuild>
+            <MoreAdds title={"All add-ons"}></MoreAdds>
         </div>
     );
 };
