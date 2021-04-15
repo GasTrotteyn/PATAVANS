@@ -7,6 +7,7 @@ import Gallery from "./Pages/Gallery/Gallery";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Contact from "./Pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import VideoShower from "./containers/VideoShower/VideoShower";
 
 function App() {
     let routes = (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/gallery" component={Gallery} />
             <Route path="/aboutUs" component={AboutUs} />
             <Route path="/contact" component={Contact} />
+            <Route path="/videoShower" component={VideoShower} />
             <Route path="/" component={Home} />
         </Switch>
     );

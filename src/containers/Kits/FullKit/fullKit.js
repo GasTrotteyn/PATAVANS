@@ -157,7 +157,7 @@ const BasicKit = (props) => {
                 srcPhoto={imgFullConversion3}
                 altPhoto="Shower seat"
                 btnMessage={"View Video"}
-                path={"/video-shower"}
+                path={"/videoShower"}
                 buttonForVideo
             ></RightPiece>
             <IconSection

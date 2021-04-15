@@ -1,0 +1,15 @@
+.video {
+    width: 80%;
+    /*margin-top: 20%;
+    margin-left: 10%;*/
+}
+
+@media (min-width: 768px) {
+    .video {
+        width: 60%;
+        /*margin: 0;
+        transform-origin: 0% -50%;
+        transform: translateY(-120%);
+        transform: translateX(20%);*/
+    }
+}

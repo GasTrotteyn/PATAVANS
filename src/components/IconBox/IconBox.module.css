@@ -63,6 +63,7 @@
 @media (min-width: 1170px) {
     .container {
         margin: 23px 0;
+        max-width: 224px;
     }
     .icon {
         width: 100px;
