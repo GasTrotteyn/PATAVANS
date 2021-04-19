@@ -5,11 +5,11 @@ import Partners from "../containers/Partners/Partners";
 import Footer from "../containers/Footer/Footer";
 
 const Layout = (props) => {
-    console.log(props);
     return (
         <React.Fragment>
             {props.children}
-            {props.location.pathname === "/contact" ? null : (
+            {props.location.pathname === "/contact" ||
+            props.location.pathname === "/preConversion" ? null : (
                 <Partners></Partners>
             )}
             <Footer></Footer>

@@ -88,6 +88,7 @@ const Contact = (props) => {
                             value={data.tel}
                         ></input>
                         <textarea
+                            className={classes.textArea}
                             placeholder="Message"
                             onChange={(event) => {
                                 inputChangeHandler(event, "message");

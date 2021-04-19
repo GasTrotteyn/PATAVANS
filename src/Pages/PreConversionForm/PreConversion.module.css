@@ -5,10 +5,6 @@
     align-items: center;
 }
 .dataSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* border: 1px solid yellowgreen; */
     margin: 13vw 5vw;
 }
 h4 {
@@ -58,7 +54,7 @@ p {
     font-size: 3.8vw;
 }
 .textArea {
-    height: 200px;
+    height: 80px;
 }
 .button {
     border: 1px solid #b8b8b8;
@@ -79,10 +75,7 @@ p {
         margin: 10vw 0 0 0;
         max-width: 80vw;
     }
-    .ourInfo {
-        /* border: 1px solid red; */
-        width: 46%;
-    }
+
     h4 {
         font-size: 14px;
     }
@@ -92,14 +85,18 @@ p {
     p {
         font-size: 14px;
     }
-    .yourInfo {
-        /* border: 1px dotted red; */
-        width: 46%;
+    .yourInfo form {
+        /*border: 1px solid red;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .yourInfo form input,
-    .textArea {
-        margin: 10px 0;
+    textarea {
+        margin: 10px 0 10px 0;
         font-size: 14px;
+        width: 43%;
     }
     .textArea {
         height: 150px;

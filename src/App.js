@@ -8,6 +8,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Contact from "./Pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import VideoShower from "./containers/VideoShower/VideoShower";
+import PreConversion from "./Pages/PreConversionForm/PreConversion";
 
 function App() {
     let routes = (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/aboutUs" component={AboutUs} />
             <Route path="/contact" component={Contact} />
             <Route path="/videoShower" component={VideoShower} />
+            <Route path="/preConversion" component={PreConversion} />
             <Route path="/" component={Home} />
         </Switch>
     );

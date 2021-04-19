@@ -16,7 +16,7 @@ const Cta = (props) => {
                 <p className={classes.subtitle}>
                     Take a minute to fill out our Pre-Conversion Questionaire!
                 </p>
-                <Button transparent path={"/contact"}>
+                <Button transparent path={"/preConversion"}>
                     Start
                 </Button>
             </div>
