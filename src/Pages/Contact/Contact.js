@@ -98,6 +98,16 @@ const Contact = (props) => {
                     </form>
                 </div>
             </div>
+            <iframe
+                className={classes.map}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.1716847044777!2d-105.21394518525203!3d40.004612488525225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf27166979755%3A0x625684d765d824ca!2sPataVans!5e0!3m2!1ses-419!2sar!4v1618835960346!5m2!1ses-419!2sar"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                title={"map"}
+            ></iframe>
         </div>
     );
 };
