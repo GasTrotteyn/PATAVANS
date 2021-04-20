@@ -3,30 +3,89 @@ import classes from "./Contact.module.css";
 import Header from "../../containers/Headers/HeaderStandard/Header";
 import thistles from "../../Assests/optimized/banner-contact.jpg";
 import axios from "axios";
+import { checkValidity } from "../../shared/utilities";
 
 const Contact = (props) => {
     const [data, setData] = useState({
-        name: "",
-        email: "",
-        tel: "",
-        message: "",
+        form: {
+            name: {
+                value: "",
+                valid: false,
+                validation: {
+                    required: true,
+                },
+            },
+            email: {
+                value: "",
+                valid: false,
+                validation: {
+                    required: true,
+                    isEmail: true,
+                },
+            },
+            tel: {
+                value: "",
+                valid: true,
+                validation: {
+                    required: false,
+                },
+            },
+            message: {
+                value: "",
+                valid: false,
+                validation: {
+                    required: true,
+                },
+            },
+        },
+        formIsValid: false,
     });
 
     const inputChangeHandler = (event, id) => {
-        // event.preventDefault();
+        // manage the values
         let formModified = { ...data };
-        formModified[id] = event.target.value;
+        let elementModified = { ...formModified.form[id] };
+        elementModified.value = event.target.value;
+
+        //check validity of the imput that is changing
+        elementModified.valid = checkValidity(
+            formModified.form[id].value,
+            formModified.form[id].validation
+        );
+        //console.log(elementModified.valid);
+        formModified.form[id] = elementModified;
+        //console.log(formModified[id]);
+
+        //set the validity of the entire form
+        let formIsValid = true;
+        for (let identifier in formModified.form) {
+            formIsValid = formModified.form[identifier].valid && formIsValid;
+        }
+        formModified.formIsValid = formIsValid;
+
+        // update the state
         setData(formModified);
-        console.log(data[id]);
     };
 
     const submitHandler = (event) => {
         event.preventDefault();
-        let newForm = { ...data };
-        axios
-            .post("https://jsonplaceholder.typicode.com/posts", newForm)
-            .then((resp) => console.log(resp));
+        if (data.formIsValid) {
+            let newForm = { ...data };
+            axios
+                .post("https://jsonplaceholder.typicode.com/posts", newForm)
+                .then((resp) => console.log(resp))
+                .catch((error) => {
+                    console.log(error);
+                });
+        } else {
+            alert("some fields are required");
+        }
     };
+
+    let classesArrayForButton = [
+        classes.button,
+        data.formIsValid ? null : classes.alertButton,
+    ].join(" ");
 
     return (
         <div className={classes.container}>
@@ -67,35 +126,35 @@ const Contact = (props) => {
                     <h4>WRITE US</h4>
                     <form onSubmit={submitHandler}>
                         <input
-                            placeholder="Name & lastname"
+                            placeholder="Name & lastname *"
                             onChange={(event) => {
                                 inputChangeHandler(event, "name");
                             }}
-                            value={data.name}
+                            value={data.form.name.value}
                         ></input>
                         <input
-                            placeholder="E-mail"
+                            placeholder="E-mail *"
                             onChange={(event) => {
                                 inputChangeHandler(event, "email");
                             }}
-                            value={data.email}
+                            value={data.form.email.value}
                         ></input>
                         <input
-                            placeholder="Phone"
+                            placeholder="Phone *"
                             onChange={(event) => {
                                 inputChangeHandler(event, "tel");
                             }}
-                            value={data.tel}
+                            value={data.form.tel.value}
                         ></input>
                         <textarea
                             className={classes.textArea}
-                            placeholder="Message"
+                            placeholder="Message *"
                             onChange={(event) => {
                                 inputChangeHandler(event, "message");
                             }}
-                            value={data.message}
+                            value={data.form.message.value}
                         ></textarea>
-                        <button className={classes.button}>Send</button>
+                        <button className={classesArrayForButton}>Send</button>
                     </form>
                 </div>
             </div>

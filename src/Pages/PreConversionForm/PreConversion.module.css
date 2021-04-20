@@ -56,6 +56,9 @@ p {
 .textArea {
     height: 80px;
 }
+.note {
+    font-size: 12px;
+}
 .button {
     border: 1px solid #b8b8b8;
     width: 30vw;
@@ -63,6 +66,9 @@ p {
     background-color: transparent;
     font-size: 3.8vw;
     align-self: center;
+}
+.alertButton {
+    color: #d6d6d6;
 }
 
 .map {

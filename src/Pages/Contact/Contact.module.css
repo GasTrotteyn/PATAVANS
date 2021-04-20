@@ -68,6 +68,9 @@ p {
     font-size: 3.8vw;
     align-self: center;
 }
+.alertButton {
+    color: #d6d6d6;
+}
 
 .map {
     width: 100%;
