@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import classes from "./PreConversion.module.css";
 import Header from "../../containers/Headers/HeaderStandard/Header";
 import wind from "../../Assests/optimized/banner-form.jpg";
-import axios from "axios";
 import { checkValidity } from "../../shared/utilities";
+// import axios from "axios";
+
+// axios.defaults.headers.post["sorcho"] = null;
 
 const Contact = (props) => {
     const [data, setData] = useState({
@@ -100,9 +102,17 @@ const Contact = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
         if (data.formIsValid) {
-            let newForm = { ...data };
-            axios
-                .post("https://jsonplaceholder.typicode.com/posts", newForm)
+            let form = { ...data };
+            let formString = JSON.stringify(form);
+            console.log(formString);
+            fetch("http://dummy.restapiexample.com/api/v1/create", {
+                method: "POST",
+                body: formString,
+            })
+                .then((resp) => {
+                    let mostrable = resp.json();
+                    return mostrable;
+                })
                 .then((resp) => console.log(resp))
                 .catch((error) => {
                     console.log(error);
@@ -153,6 +163,11 @@ const Contact = (props) => {
                             value={data.form.lastName.value}
                         ></input>
                         <input
+                            className={
+                                data.form.email.valid
+                                    ? null
+                                    : classes.mailInvalid
+                            }
                             placeholder="E-mail *"
                             onChange={(event) => {
                                 inputChangeHandler(event, "email");
@@ -166,27 +181,42 @@ const Contact = (props) => {
                             }}
                             value={data.form.tel.value}
                         ></input>
-                        <p>Have you already purchased your Van?</p>
-                        <label htmlFor="yes">Yes</label>
-                        <input
-                            type="radio"
-                            id="yes"
-                            name="have"
-                            value={true}
-                            onChange={(event) => {
-                                inputChangeHandler(event, "haveVan");
-                            }}
-                        ></input>
-                        <label htmlFor="no">no</label>
-                        <input
-                            type="radio"
-                            id="no"
-                            name="have"
-                            value={false}
-                            onChange={(event) => {
-                                inputChangeHandler(event, "haveVan");
-                            }}
-                        ></input>
+                        <div>
+                            <p>Have you already purchased your Van?</p>
+                            <div className={classes.radioContainer}>
+                                <label htmlFor="yes" className={classes.radio}>
+                                    <input
+                                        type="radio"
+                                        id="yes"
+                                        name="have"
+                                        value={true}
+                                        onChange={(event) => {
+                                            inputChangeHandler(
+                                                event,
+                                                "haveVan"
+                                            );
+                                        }}
+                                    ></input>
+                                    Yes
+                                </label>
+
+                                <label htmlFor="no" className={classes.radio}>
+                                    <input
+                                        type="radio"
+                                        id="no"
+                                        name="have"
+                                        value={false}
+                                        onChange={(event) => {
+                                            inputChangeHandler(
+                                                event,
+                                                "haveVan"
+                                            );
+                                        }}
+                                    ></input>
+                                    No
+                                </label>
+                            </div>
+                        </div>
                         <input
                             placeholder="Year, make and model of your Van"
                             onChange={(event) => {
@@ -194,26 +224,32 @@ const Contact = (props) => {
                             }}
                             value={data.form.vanDetails.value}
                         ></input>
-                        <label htmlFor="option">
-                            -Select an option of Van conversion - *
+                        <label htmlFor="option" className={classes.select}>
+                            <p> Select an option of Van conversion</p>
+                            <select
+                                id="option"
+                                onChange={(event) => {
+                                    inputChangeHandler(
+                                        event,
+                                        "convertionOption"
+                                    );
+                                }}
+                            >
+                                <option value="null">Select</option>
+                                <option value="basic">Basic Conversion</option>
+                                <option value="full">Full Conversion</option>
+                            </select>
                         </label>
-                        <select
-                            id="option"
-                            onChange={(event) => {
-                                inputChangeHandler(event, "convertionOption");
-                            }}
-                        >
-                            <option value="basic">Basic Conversion</option>
-                            <option value="full">Full Conversion</option>
-                        </select>
-                        <input
-                            type="date"
-                            placeholder="-Ideal start date for your conversion-"
-                            onChange={(event) => {
-                                inputChangeHandler(event, "idealDate");
-                            }}
-                            value={data.form.idealDate.value}
-                        ></input>
+                        <label className={classes.select}>
+                            <p>-Ideal start date for your conversion-</p>
+                            <input
+                                type="date"
+                                onChange={(event) => {
+                                    inputChangeHandler(event, "idealDate");
+                                }}
+                                value={data.form.idealDate.value}
+                            ></input>
+                        </label>
                         <textarea
                             className={classes.textArea}
                             placeholder="What is the primary use for this van? (i.e. weekend camping, work vehicle, full-time residence, etc.) *"

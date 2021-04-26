@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import classes from "./Contact.module.css";
 import Header from "../../containers/Headers/HeaderStandard/Header";
 import thistles from "../../Assests/optimized/banner-contact.jpg";
-import axios from "axios";
 import { checkValidity } from "../../shared/utilities";
+// import axios from "axios";
+
+// axios.defaults.headers.post["sorcho"] = null;
 
 const Contact = (props) => {
     const [data, setData] = useState({
@@ -70,9 +72,17 @@ const Contact = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
         if (data.formIsValid) {
-            let newForm = { ...data };
-            axios
-                .post("https://jsonplaceholder.typicode.com/posts", newForm)
+            let form = { ...data };
+            let formString = JSON.stringify(form);
+            console.log(formString);
+            fetch("http://dummy.restapiexample.com/api/v1/create", {
+                method: "POST",
+                body: formString,
+            })
+                .then((resp) => {
+                    let mostrable = resp.json();
+                    return mostrable;
+                })
                 .then((resp) => console.log(resp))
                 .catch((error) => {
                     console.log(error);
@@ -133,6 +143,11 @@ const Contact = (props) => {
                             value={data.form.name.value}
                         ></input>
                         <input
+                            className={
+                                data.form.email.valid
+                                    ? null
+                                    : classes.mailInvalid
+                            }
                             placeholder="E-mail *"
                             onChange={(event) => {
                                 inputChangeHandler(event, "email");

@@ -60,6 +60,9 @@ p {
 .textArea {
     height: 200px;
 }
+.mailInvalid {
+    color: #fb6060;
+}
 .button {
     border: 1px solid #b8b8b8;
     width: 30vw;

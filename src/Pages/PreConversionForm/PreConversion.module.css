@@ -45,7 +45,8 @@ p {
     flex-direction: column;
 }
 .yourInfo form input,
-.textArea {
+.textArea,
+.select {
     background-color: #e2e2e2;
     border: none;
     padding: 10px;
@@ -54,8 +55,39 @@ p {
     font-size: 3.8vw;
 }
 .textArea {
-    height: 80px;
+    height: 150px;
 }
+.mailInvalid {
+    color: #fb6060;
+}
+.radioContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.radio {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.select select {
+    background-color: rgb(179, 179, 179);
+    font-size: 3.8vw;
+    color: #e2e2e2;
+    border: none;
+}
+.select p {
+    margin: 0 0 10px 0;
+}
+form .select input {
+    background-color: rgb(179, 179, 179);
+    font-size: 3.8vw;
+    border: none;
+    width: 90%;
+    padding: 5px;
+    margin-top: 0px;
+}
+
 .note {
     font-size: 12px;
 }
@@ -104,8 +136,18 @@ p {
         font-size: 14px;
         width: 43%;
     }
+    .select {
+        width: 43%;
+    }
+    .select select {
+        font-size: 14px;
+    }
+    .select p {
+        margin: 0;
+    }
     .textArea {
         height: 150px;
+        font-size: 14px;
     }
 
     .button {
