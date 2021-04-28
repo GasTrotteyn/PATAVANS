@@ -3,7 +3,7 @@ import classes from "./Contact.module.css";
 import Header from "../../containers/Headers/HeaderStandard/Header";
 import thistles from "../../Assests/optimized/banner-contact.jpg";
 import { checkValidity } from "../../shared/utilities";
-// import axios from "axios";
+import axios from "axios";
 
 // axios.defaults.headers.post["sorcho"] = null;
 
@@ -73,15 +73,13 @@ const Contact = (props) => {
         event.preventDefault();
         if (data.formIsValid) {
             let form = { ...data };
-            let formString = JSON.stringify(form);
-            console.log(formString);
-            fetch("http://dummy.restapiexample.com/api/v1/create", {
-                method: "POST",
-                body: formString,
-            })
+            //let formString = JSON.stringify(form);
+            //console.log(formString);
+            axios
+                .post("http://localhost:3000/coso", form)
                 .then((resp) => {
-                    let mostrable = resp.json();
-                    return mostrable;
+                    //let mostrable = resp.json();
+                    return resp;
                 })
                 .then((resp) => console.log(resp))
                 .catch((error) => {
