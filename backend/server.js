@@ -7,6 +7,16 @@ const app = express();
 
 app.use(bodyParser.json());
 
+//This allow requests from the frontend
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "https://patavans1.web.app"); // update to match the domain you will make the request from
+    res.header(
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+});
+
 const transporter = nodeMailer.createTransport({
     service: "gmail",
     auth: {
@@ -35,7 +45,7 @@ app.get("/", (req, res) => {
     res.send("hola mundo!");
 });
 
-app.post("/coso", (req, res) => {
+app.post("/contact", (req, res) => {
     if (req.body.form.name.value) {
         const emailText =
             "Name: " +
@@ -54,7 +64,7 @@ app.post("/coso", (req, res) => {
         const mailOptions = {
             from: data.user,
             to: "gtrotteyn@hotmail.com",
-            subject: "Mail from the web-site form",
+            subject: "Mail from Patavans web-site form",
             text: emailText,
         };
         transporter.sendMail(mailOptions, function (error, info) {
@@ -71,6 +81,60 @@ app.post("/coso", (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+app.post("/preconversion", (req, res) => {
+    if (req.body.form.firstName.value) {
+        const emailText =
+            "Firs Name: " +
+            req.body.form.firstName.value +
+            "\n" +
+            "Last Name: " +
+            req.body.form.lastName.value +
+            "\n" +
+            "Email: " +
+            req.body.form.email.value +
+            "\n" +
+            "Tel: " +
+            req.body.form.tel.value +
+            "\n" +
+            "Have a Van?: " +
+            req.body.form.haveVan.value +
+            "\n" +
+            "Van Details: " +
+            req.body.form.vanDetails.value +
+            "\n" +
+            "Conversion Option Chosen: " +
+            req.body.form.convertionOption.value +
+            "\n" +
+            "Ideal date for start conversion: " +
+            req.body.form.idealDate.value +
+            "\n" +
+            "Primary use of the Van: " +
+            req.body.form.primaryUse.value +
+            "\n" +
+            "Aditional message: " +
+            req.body.form.message.value;
+
+        //console.log(emailText);
+        const mailOptions = {
+            from: data.user,
+            to: "gtrotteyn@hotmail.com",
+            subject: "Mail from Patavans web-site preconversion form",
+            text: emailText,
+        };
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log("Email sent: " + info.response);
+            }
+        });
+        res.status(201);
+        res.json(req.body.form);
+    } else {
+        res.status(401);
+    }
+});
+
+app.listen(3001, () => {
     console.log("server running!");
 });

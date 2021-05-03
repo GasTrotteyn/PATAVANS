@@ -107,6 +107,16 @@ form .select input {
     width: 100%;
     margin: 13vw;
 }
+
+.screenMessage {
+    background-color: black;
+    color: white;
+    font-size: 3vw;
+    height: 4vw;
+    margin-top: 10vw;
+    padding: 5vw;
+}
+
 @media (min-width: 768px) {
     .dataSection {
         flex-direction: row;
@@ -158,6 +168,9 @@ form .select input {
     .map {
         margin: 10vw 0 0 0;
         max-width: 100%;
+    }
+    .screenMessage {
+        font-size: 20px;
     }
 }
 

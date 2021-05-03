@@ -4,10 +4,15 @@ import Header from "../../containers/Headers/HeaderStandard/Header";
 import thistles from "../../Assests/optimized/banner-contact.jpg";
 import { checkValidity } from "../../shared/utilities";
 import axios from "axios";
+import Spinner from "../../components/UI/Spinner/Spinner";
+import Backdrop from "../../components/UI/Backdrop/Backdrop";
+import { Link } from "react-router-dom";
 
-// axios.defaults.headers.post["sorcho"] = null;
+//axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
 const Contact = (props) => {
+    const [sending, setSending] = useState(false);
+    const [respMessage, setRespMessage] = useState(null);
     const [data, setData] = useState({
         form: {
             name: {
@@ -72,18 +77,24 @@ const Contact = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
         if (data.formIsValid) {
+            setSending(true);
+
             let form = { ...data };
-            //let formString = JSON.stringify(form);
-            //console.log(formString);
             axios
-                .post("http://localhost:3000/coso", form)
+                .post("http://localhost:3001/contact", form)
                 .then((resp) => {
-                    //let mostrable = resp.json();
-                    return resp;
+                    //console.log("esto mandaste" + resp);
+                    setSending(false);
+                    setRespMessage(
+                        "Thank you for contacting us!!! Your information was sent successfully. We will reply as soon as possible."
+                    );
                 })
-                .then((resp) => console.log(resp))
                 .catch((error) => {
                     console.log(error);
+                    setSending(false);
+                    setRespMessage(
+                        "there was an unespected error, please retry in a few minutes."
+                    );
                 });
         } else {
             alert("some fields are required");
@@ -95,14 +106,24 @@ const Contact = (props) => {
         data.formIsValid ? null : classes.alertButton,
     ].join(" ");
 
-    return (
+    let screenMessage = respMessage ? (
+        <Link to="./">
+            <Backdrop show>
+                <div className={classes.screenMessage}>{respMessage}</div>
+            </Backdrop>
+        </Link>
+    ) : null;
+
+    let content = (
         <div className={classes.container}>
+            {screenMessage}
             <Header
                 background={thistles}
                 alt="thistles in the field"
                 flag="CONTACT"
                 title="We are here to help on your Journey"
             ></Header>
+
             <div className={classes.dataSection}>
                 <div className={classes.ourInfo}>
                     <h4>CONTACT US</h4>
@@ -183,6 +204,8 @@ const Contact = (props) => {
             ></iframe>
         </div>
     );
+
+    return sending ? <Spinner></Spinner> : content;
 };
 
 export default Contact;
