@@ -26,7 +26,7 @@ const Upgrade = (props) => {
     return (
         <div className={classes.container}>
             <h2 className={classes.title}>
-                Upgrade your basic conversion van with this add-ons
+                Upgrade your Basic Conversion package with these add ons
             </h2>
             <div className={classes.mobile}>{boxes}</div>
             <div className={classes.desktop}>

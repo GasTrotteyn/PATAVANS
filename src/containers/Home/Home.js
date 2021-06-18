@@ -6,10 +6,10 @@ import LeftPiece from "../../components/Pieces/LeftPiece/LeftPiece";
 import window from "../../Assests/optimized/img-home-about.jpg";
 import ConversionOptions from "../ConversionsOptions/ConversionsOptions";
 import Video from "../../components/Video/Video";
-import ceramics from "../../Assests/optimized/ceramic-main4.png";
+import ceramics from "../../Assests/optimized/tiles_final.jpg";
 import ceramicIcon from "../../Assests/optimized/bg-icon-decor.png";
 import bedIcon from "../../Assests/optimized/bg-icon-foot.png";
-import bedExtension from "../../Assests/optimized/img-feature-bedextension3.png";
+import bedExtension from "../../Assests/optimized/BedExtensionFinal.jpg";
 import HomeGallery from "../Gallery/HomeGallery/HomeGallery";
 import FaqsTestIcon from "../FaqsTestimonialsAndIcons/FaqsTestIcon";
 import Iframe from "../../components/UI/Iframe/Iframe";
@@ -49,8 +49,8 @@ const Home = (props) => {
                 title="Extend your beed to sleep more confortably"
                 srcIcon={bedIcon}
                 altIcon="bed icon"
-                paragraph1="Fiberglass bed extensions will provide you with the extra inches needed to lay down and sleep comfortably in the width of your van."
-                paragraph2="The universally sized bed estension blends perfectly with the exterior of any van while giving you the space you need."
+                paragraph1="Flarespace bed extensions will provide you with the extra inches needed to lay down and sleep comfortably in the width of your van, freeing up a lot of space in your van."
+                paragraph2=" What will you do with more space inside your van?"
                 srcPhoto={bedExtension}
                 altPhoto="bed extension"
                 btnMessage="gallery"

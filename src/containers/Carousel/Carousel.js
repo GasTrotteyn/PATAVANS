@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./Carousel.module.css";
 import Slides from "../../components/UI/Slides/Slides";
-import van1 from "../../Assests/slide1.jpg";
-import van2 from "../../Assests/van2.jpg";
-import van3 from "../../Assests/van3.jpg";
+import van1 from "../../Assests/optimized/Home3.jpg";
+import van2 from "../../Assests/optimized/Home4.jpg";
+import van3 from "../../Assests/optimized/Home2.jpg";
 
 const Carousel = (props) => {
     return (

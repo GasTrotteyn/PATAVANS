@@ -63,7 +63,7 @@ app.post("/contact", (req, res) => {
         //console.log(emailText);
         const mailOptions = {
             from: data.user,
-            to: "gtrotteyn@hotmail.com",
+            to: "patavansboulder@gmail.com",
             subject: "Mail from Patavans web-site form",
             text: emailText,
         };
@@ -117,7 +117,7 @@ app.post("/preconversion", (req, res) => {
         //console.log(emailText);
         const mailOptions = {
             from: data.user,
-            to: "gtrotteyn@hotmail.com",
+            to: "patavansboulder@gmail.com",
             subject: "Mail from Patavans web-site preconversion form",
             text: emailText,
         };
@@ -135,6 +135,6 @@ app.post("/preconversion", (req, res) => {
     }
 });
 
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log("server running!");
 });

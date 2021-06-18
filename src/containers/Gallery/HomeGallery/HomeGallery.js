@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./HomeGallery.module.css";
-import gal1 from "../../../Assests/gal1.jpg";
-import gal2 from "../../../Assests/gal2.jpg";
-import gal3 from "../../../Assests/gal3.jpg";
-import gal4 from "../../../Assests/gal4.jpg";
-import gal5 from "../../../Assests/gal5.jpg";
-import gal6 from "../../../Assests/gal6.jpg";
+import gal1 from "../../../Assests/optimized/viewGallery1.jpg";
+import gal2 from "../../../Assests/optimized/viewGallery5.jpg";
+import gal3 from "../../../Assests/optimized/viewGallery2.jpg";
+import gal4 from "../../../Assests/optimized/viewGallery6.jpg";
+import gal5 from "../../../Assests/optimized/viewGallery3.jpg";
+import gal6 from "../../../Assests/optimized/viewGallery4.jpg";
 import { Link } from "react-router-dom";
 
 const HomeGallery = (props) => {

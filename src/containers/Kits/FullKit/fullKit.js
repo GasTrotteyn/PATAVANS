@@ -13,9 +13,9 @@ import imgFullConversion from "../../../Assests/optimized/img-full-conversion.pn
 
 import LeftPiece from "../../../components/Pieces/LeftPiece/LeftPiece";
 import iconKitchen from "../../../Assests/optimized/bg-icon-kitchen.png";
-import imgFullConversion2 from "../../../Assests/optimized/img-full-conversion2.png";
+import imgFullConversion2 from "../../../Assests/optimized/img-full-conversion2.jpeg";
 import iconDuck from "../../../Assests/optimized/bg-icon-duck.png";
-import imgFullConversion3 from "../../../Assests/optimized/img-full-conversion3.png";
+import imgFullConversion3 from "../../../Assests/optimized/img-full-conversion3.jpg";
 
 import iconInterior from "../../../Assests/optimized/icon-interior.svg";
 import iconShower from "../../../Assests/optimized/icon-shower.svg";
@@ -33,13 +33,13 @@ const BasicKit = (props) => {
         {
             id: 1,
             title: "Fast Conversion",
-            subtitles: ["4-5 weeks"],
+            subtitles: ["90 days"],
             src: iconClock,
         },
         {
             id: 2,
             title: "Energy & heater",
-            subtitles: ["Propane & solar system"],
+            subtitles: ["480w & Evo 40 Webasto"],
             src: iconSolarPanel,
         },
         {
@@ -51,13 +51,13 @@ const BasicKit = (props) => {
         {
             id: 4,
             title: "Bathroom",
-            subtitles: ["Shower & Water Tank"],
+            subtitles: ["Shower Seat & Water System"],
             src: shower,
         },
         {
             id: 5,
             title: "Full interior",
-            subtitles: ["Cabinets & Table"],
+            subtitles: ["Cabinets, Table & Bed"],
             src: table,
         },
     ];

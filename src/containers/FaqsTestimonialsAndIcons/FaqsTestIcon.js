@@ -6,27 +6,27 @@ import IconSection from "../../components/IconsSection/IconsSection";
 import iconClock from "../../Assests/optimized/icon-clock.svg";
 import iconShield from "../../Assests/optimized/icon-shield.svg";
 import iconSolarPanel from "../../Assests/optimized/icon-solarpanel.svg";
-import iconUmbrella from "../../Assests/optimized/icon-umbrella.svg";
+import iconBattery from "../../Assests/optimized/icon-battery.svg";
 
 const FaqsTestIcon = (props) => {
     const icons = [
         {
             id: 1,
             title: "Fast Conversion",
-            subtitles: ["2 weeks basics 5 weeks full*"],
+            subtitles: ["60 days basics 90 days full*"],
             src: iconClock,
         },
         {
             id: 2,
             title: "Off-grid solar power",
-            subtitles: ["from 300 watts onwards"],
+            subtitles: ["from 460 watts onwards"],
             src: iconSolarPanel,
         },
         {
             id: 3,
-            title: "Moisture Free",
-            subtitles: ["With the best quality"],
-            src: iconUmbrella,
+            title: "Lithium battery",
+            subtitles: ["from 200 ah."],
+            src: iconBattery,
         },
         {
             id: 4,

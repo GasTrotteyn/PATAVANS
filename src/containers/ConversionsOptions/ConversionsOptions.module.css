@@ -47,7 +47,7 @@
 
 @media (min-width: 768px) {
     .container {
-        margin-top: -25vw;
+        margin-top: -11.5vw;
         z-index: 3;
     }
 
@@ -85,7 +85,7 @@
 
 @media (min-width: 1170px) {
     .container {
-        margin-top: -250px;
+        margin-top: -90px;
     }
 
     .boxTitle {

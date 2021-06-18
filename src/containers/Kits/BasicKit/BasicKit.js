@@ -25,13 +25,13 @@ const BasicKit = (props) => {
         {
             id: 1,
             title: "Fast Conversion",
-            subtitles: ["2 weeks"],
+            subtitles: ["60 days"],
             src: iconClock,
         },
         {
             id: 2,
-            title: "Solar Energy",
-            subtitles: ["300w solar panels"],
+            title: "Solar Power",
+            subtitles: ["480w solar panels"],
             src: iconSolarPanel,
         },
         {

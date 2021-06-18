@@ -121,17 +121,17 @@ const Contact = (props) => {
                 background={thistles}
                 alt="thistles in the field"
                 flag="CONTACT"
-                title="We are here to help on your Journey"
+                title="We are here to help you on your journey"
             ></Header>
 
             <div className={classes.dataSection}>
                 <div className={classes.ourInfo}>
                     <h4>CONTACT US</h4>
-                    <h2>We are in Denver's area</h2>
+                    <h2>We are in the Denver area</h2>
                     <p>
                         Please contact us with any questions about building your
-                        custom van conversion, and start living your dreamed van
-                        life!
+                        custom van conversion. Let’s get you started on living
+                        the van life!
                     </p>
 
                     <div className={classes.ourData}>
@@ -152,7 +152,7 @@ const Contact = (props) => {
                     </div>
                 </div>
                 <div className={classes.yourInfo}>
-                    <h4>WRITE US</h4>
+                    <h4>Send Us a Message</h4>
                     <form onSubmit={submitHandler}>
                         <input
                             placeholder="Name & lastname *"
@@ -194,7 +194,7 @@ const Contact = (props) => {
             </div>
             <iframe
                 className={classes.map}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.1716847044777!2d-105.21394518525203!3d40.004612488525225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf27166979755%3A0x625684d765d824ca!2sPataVans!5e0!3m2!1ses-419!2sar!4v1618835960346!5m2!1ses-419!2sar"
+                src="https://maps.google.com/maps?q=15055%20York%20St.%20Building%20A,%20%20Thornton,%20CO%2080602&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="600"
                 height="450"
                 style={{ border: 0 }}

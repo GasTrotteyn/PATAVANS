@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Video.module.css";
-import source from "../../Assests/optimized/videoProvisorio.mp4";
+import source from "../../Assests/optimized/video_dron1_recortado_3.mp4";
 
 const Video = (props) => {
     return (

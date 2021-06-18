@@ -2,6 +2,7 @@
     margin-top: 15vw;
     position: relative;
     display: flex;
+
     justify-content: center;
 }
 
@@ -9,15 +10,23 @@
     position: absolute;
     background-color: white;
     padding: 3vw 8vw;
-    top: 33vw;
+    top: 86vw;
     font-size: 4vw;
     text-decoration: none;
     color: black;
 }
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .photo {
     vertical-align: -webkit-baseline-middle;
-    max-width: 100vw;
+    width: 50%;
+}
+.longPhoto {
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -27,8 +36,7 @@
     }
     .photos {
         width: 100%;
-
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     .photo {

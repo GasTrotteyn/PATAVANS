@@ -26,13 +26,13 @@ const Header = (props) => {
                     fontWeight: "normal",
                 }}
             >
-                LIFE IS A JOURNEY.<br></br> YOU DESERVE THE BEST ONE
+                CUSTOM VAN CONVERSIONS.<br></br> HOME IS WHERE YOU PARK IT.
             </h1>
             <div className={classes.mountain}></div>
             <h2 className={classes.description}>
                 Customize your van to fit your needs and lifestyle. Travel
-                without schedules or expensive reservations and feel as comfort
-                as home.
+                without schedules or expensive reservations, and live with ease
+                in your home-on-wheels.
             </h2>
         </div>
     );

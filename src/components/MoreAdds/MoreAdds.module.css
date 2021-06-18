@@ -15,7 +15,7 @@
     flex-direction: column;
     align-content: space-between;
     flex-wrap: wrap;
-    height: 111.8vw;
+    height: 130vw;
     margin-top: 2vw;
 }
 
@@ -43,7 +43,7 @@
     }
 
     .content {
-        height: 650px;
+        height: 730px;
     }
 
     .title {

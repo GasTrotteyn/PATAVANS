@@ -10,6 +10,9 @@ const Piece = (props) => {
         altIcon,
         paragraph1,
         paragraph2,
+        paragraph3,
+        paragraph4,
+        paragraph5,
         btnMessage,
         path,
         srcPhoto,
@@ -46,6 +49,15 @@ const Piece = (props) => {
                 >
                     {paragraph2}
                 </p>
+                {paragraph3 ? (
+                    <p className={classes.paragraph}>{paragraph3}</p>
+                ) : null}
+                {paragraph4 ? (
+                    <p className={classes.paragraph}>{paragraph4}</p>
+                ) : null}
+                {paragraph5 ? (
+                    <p className={classes.paragraph}>{paragraph5}</p>
+                ) : null}
                 {noButton ? null : (
                     <Button path={path} forVideo={buttonForVideo}>
                         {btnMessage}

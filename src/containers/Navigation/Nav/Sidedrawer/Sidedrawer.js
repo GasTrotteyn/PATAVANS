@@ -17,7 +17,7 @@ const SideDrawer = (props) => {
 
     const navItems = [
         { title: "HOME", path: "/" },
-        { title: "CONVERSION KITS", path: "/conversions" },
+        { title: "CONVERSIONS", path: "/conversions" },
         { title: "GALLERY", path: "/gallery" },
         { title: "ABOUT US", path: "/aboutUs" },
         { title: "CONTACT", path: "/contact" },
