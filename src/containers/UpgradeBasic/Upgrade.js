@@ -4,7 +4,7 @@ import shower from "../../Assests/optimized/img-upgrade-shower.png";
 import kitchen from "../../Assests/optimized/img-upgrade-kitchen.png";
 import window from "../../Assests/optimized/img-upgrade-windows.png";
 import seats from "../../Assests/optimized/img-upgrade-swivel.png";
-import ventilation from "../../Assests/optimized/img-upgrade-ventilation.png";
+import ventilation from "../../Assests/optimized/WebastoEvo40.jpg";
 import Box from "../../components/ImgBox/ImgBox";
 
 const Upgrade = (props) => {
@@ -46,7 +46,7 @@ const Upgrade = (props) => {
                 </div>
                 <div className={classes.titlesStrip}>
                     <p>Swivel Base Driver and Passenger Seats</p>
-                    <p>Ventilation Upgrades & GAS / diesel Heating</p>
+                    <p>Heating Upgrades & GAS / diesel Heating</p>
                 </div>
             </div>
         </div>

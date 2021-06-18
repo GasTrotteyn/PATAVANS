@@ -7,12 +7,12 @@ import iconVentilation from "../../../Assests/optimized/icon-ventilation.svg";
 import iconFloor from "../../../Assests/optimized/icon-panels.svg";
 import RightPiece from "../../../components/Pieces/RightPiece/RightPiece";
 import iconPillow from "../../../Assests/optimized/bg-icon-pillow.png";
-import interior from "../../../Assests/optimized/img-basic-conversion.png";
+import interior from "../../../Assests/optimized/Basic2.PNG";
 import LeftPiece from "../../../components/Pieces/LeftPiece/LeftPiece";
 import iconSun from "../../../Assests/optimized/bg-icon-sun.png";
-import roof from "../../../Assests/optimized/img-solar-roof.png";
+import roof from "../../../Assests/optimized/basic2.jpg";
 import iconLog from "../../../Assests/optimized/bg-icon-log.png";
-import cedar from "../../../Assests/optimized/img-cedar-panel.png";
+import cedar from "../../../Assests/optimized/basic3.jpg";
 import iconInterior from "../../../Assests/optimized/icon-interior.svg";
 import iconExterior from "../../../Assests/optimized/icon-exterior.svg";
 import iconElectrical from "../../../Assests/optimized/icon-electrical.svg";
@@ -71,10 +71,10 @@ const BasicKit = (props) => {
             id: 3,
             title: "Electrical",
             subtitles: [
-                "3 Solar Panels - 100 Watt EA",
-                "Two Batteries - 100 AMP EA",
+                "3 Solar Panels - 160 Watt EA",
+                "Two Lithium Batteries - 100 AMP EA",
                 "Fuse Box",
-                "MPPT Solar Controller",
+                "MPPT Battery Insolator",
                 "Electrical Wiring",
                 "4 LED lights & switches",
                 "3 USB outlets",

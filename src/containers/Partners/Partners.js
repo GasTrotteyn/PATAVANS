@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./Partners.module.css";
 import Slides from "../../components/UI/Slides/Slides";
-import Partner1 from "../../Assests/optimized/partner-fiamma.svg";
-import Partner2 from "../../Assests/optimized/partner-orukayak.svg";
-import Partner3 from "../../Assests/optimized/partner-pkysinc.svg";
-import Partner4 from "../../Assests/optimized/partner-rhino-rack.svg";
+import Partner1 from "../../Assests/optimized/partner-battleborn.svg";
+import Partner2 from "../../Assests/optimized/partner-flarespace.svg";
+import Partner3 from "../../Assests/optimized/partner-victron.svg";
+import Partner4 from "../../Assests/optimized/partner-webasto.svg";
 
 const Partners = (props) => {
     const list = [

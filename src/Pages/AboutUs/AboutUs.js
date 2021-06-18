@@ -10,6 +10,7 @@ import pataClimbing from "../../Assests/optimized/pata_climbing.jpeg";
 import pataFlying from "../../Assests/optimized/pata_flying.jpg";
 import marisa from "../../Assests/optimized/marisa.jpg";
 import xavi from "../../Assests/optimized/xavi1.jpg";
+import moose from "../../Assests/optimized/moose.jpg";
 
 const About = (props) => {
     return (
@@ -65,6 +66,16 @@ const About = (props) => {
                 altPhoto="Xavi climbing"
                 noButton
             ></RightPiece>
+            <LeftPiece
+                flag="GUESS WHAT"
+                title="I'm Jhon"
+                paragraph1="My name’s John! I like to adventure outdoors, hike, skate, and when I’m not at work I’m tending to my 20 year old cat Sophie."
+                paragraph2=" I have a passion for skiing and a knack for fixing cars. Stoked to be a part of the PataVans team!
+                "
+                srcPhoto={moose}
+                altPhoto="Jhon"
+                noButton
+            ></LeftPiece>
 
             <Cta></Cta>
         </div>
