@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./PreConversion.module.css";
 import Header from "../../containers/Headers/HeaderStandard/Header";
-import wind from "../../Assests/optimized/banner-form.jpg";
+import wind from "../../Assests/optimized/banner-preconversion-main.jpg";
 import { checkValidity } from "../../shared/utilities";
 import axios from "axios";
 import Spinner from "../../components/UI/Spinner/Spinner";

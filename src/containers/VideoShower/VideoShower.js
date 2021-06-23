@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./VideoShower.module.css";
 import Backdrop from "../../components/UI/Backdrop/Backdrop";
 import { Link } from "react-router-dom";
-import source from "../../Assests/optimized/videoProvisorio2.mp4";
+import source from "../../Assests/optimized/ShowerSeatOK.mp4";
 
 const VideoShower = (props) => {
     return (

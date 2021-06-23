@@ -72,7 +72,7 @@ const BasicKit = (props) => {
                 "Table",
                 "Bed Frame",
                 "Custom Mattress",
-                "3 underbed Drawers",
+                "Hardwood Table",
             ],
             src: iconInterior,
         },
@@ -105,10 +105,11 @@ const BasicKit = (props) => {
             title: "Extras",
             subtitles: [
                 "Propane Instant Water Heater",
-                "Websato space Heater",
+                "Websato Evo 40 Heater",
                 "Propane System",
                 "2 Swivel Bases for Chairs",
-                "1000W Inverter",
+                "2000W Inverter",
+                "2 outlet 110v.",
             ],
             src: iconExterior,
         },
@@ -130,30 +131,30 @@ const BasicKit = (props) => {
                 title="Travel with the comforts of home"
                 srcIcon={iconCaravan}
                 altIcon="van traveling"
-                paragraph1="Our Full Custom Van Conversion combines the basic conversion paskage with all recommended add-onn accessories, to make your custom van the perfect fit."
-                paragraph2="Our Full Custom Van Conversion combines the basic conversion paskage with all recommended add-onn accessories, to make your custom van the perfect fit."
+                paragraph1="Our Full Custom Van Conversion combines the basic conversion package with all recommended add-on accessories to make your custom van the perfect fit."
+                paragraph2="This package includes a complete kitchen, dining area, heating, plumbing and bath setup. A Full Conversion is great for off-grid traveling or casual weekend excursions."
                 srcPhoto={imgFullConversion}
                 altPhoto="interior of a van"
                 noButton
             ></RightPiece>
             <LeftPiece
                 flag="FULL KITCHEN"
-                title="Please, change this title because it doesn't say anything."
+                title="Home cooking doesn’t end on the road"
                 srcIcon={iconKitchen}
-                altIcon="kitche icon"
-                paragraph1="OJO; OJO; OJO; !!!!!!Using three 100 Watt solar panels we harness the power of the sun to outfit your van with electricity."
-                paragraph2="After panels charge your two insulated batteries you can run your LED lighting, switches and USB/cigar outlets completely fossil fuel free."
+                altIcon="kitchen icon"
+                paragraph1="Our full kitchen galley includes a 2 burner stove or a stove/oven combo upgrade. Your customized hardwood countertop gives you ample prep space,  complete with a cutting board sink cover and kitchen storage underneath."
+                paragraph2=" Keep your produce and creature comforts cool in the fridge."
                 srcPhoto={imgFullConversion2}
                 altPhoto="complete kitchen"
                 noButton
             ></LeftPiece>
             <RightPiece
                 flag="BATHROOM"
-                title="Heat water and full seat toilet"
+                title="Instant hot water and one-of-a-kind shower seat"
                 srcIcon={iconDuck}
                 altIcon="Rubber duck icon"
-                paragraph1=" OJO, OJO, OJO!!!!!!  No need to worry if you dirt follows you in after your adventure, your laminate flooring will be easy to clean."
-                paragraph2=" OJO, OJO, OJO!!!!!!  No need to worry if you dirt follows you in after your adventure, your laminate flooring will be easy to clean."
+                paragraph1=" PataVans signature shower seat maximizes space in your van. When not in use, this gives you seating for your dining area or workspace. To use the shower seat, pop open the top and you will find a tub to stand in and a shower handle to hang. Use magnets and a shower curtain to make a stand up shower."
+                paragraph2=" Our propane system and water heater give you instant hot water to clean up after the day’s adventures."
                 srcPhoto={imgFullConversion3}
                 altPhoto="Shower seat"
                 btnMessage={"View Video"}

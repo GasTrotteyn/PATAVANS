@@ -16,7 +16,7 @@ const Upgrade = (props) => {
         {
             id: 5,
             src: ventilation,
-            title: "Ventilation Upgrades & GAS / diesel Heating",
+            title: "Heating Upgrades GAS / diesel",
         },
     ];
 
@@ -46,7 +46,7 @@ const Upgrade = (props) => {
                 </div>
                 <div className={classes.titlesStrip}>
                     <p>Swivel Base Driver and Passenger Seats</p>
-                    <p>Heating Upgrades & GAS / diesel Heating</p>
+                    <p>Heating Upgrades GAS / diesel</p>
                 </div>
             </div>
         </div>

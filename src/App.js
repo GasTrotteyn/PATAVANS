@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import Options from "./Pages/ConversionOptions/ConversionOptions";
 import Gallery from "./Pages/Gallery/Gallery";
+import GalleryModal from "./containers/Gallery/GalleryModal/GalleryModal";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Contact from "./Pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -15,6 +16,7 @@ function App() {
         <Switch>
             <Route path="/conversions" component={Options} />
             <Route path="/gallery" component={Gallery} />
+            <Route path="/galleryModal" component={GalleryModal} />
             <Route path="/aboutUs" component={AboutUs} />
             <Route path="/contact" component={Contact} />
             <Route path="/videoShower" component={VideoShower} />
