@@ -18,7 +18,7 @@ const Conversions = (props) => {
             src: interior2,
             alt: "interior2",
             description:
-                "Basic Convertion plus Kitchen and bathroom, water heater, fridge and propane system to make your custom van the perfect fit.",
+                "Basic Conversion plus kitchen and bathroom, water heater, fridge and propane system to make your custom van the perfect fit.",
         },
 
         {
@@ -44,7 +44,7 @@ const Conversions = (props) => {
     });
     return (
         <section className={classes.container}>
-            <h2 className={classes.sectionTitle}>CONVERSION OPTIONS</h2>
+            <h2 className={classes.sectionTitle}>CONVERSION PACKAGES</h2>
             <div className={classes.boxes}>{content}</div>
         </section>
     );

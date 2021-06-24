@@ -21,9 +21,8 @@ const Home = (props) => {
             <Carousel></Carousel>
             <RightPiece
                 flag="WHAT WE DO"
-                title="We just build your dream"
+                title="We build your dream van"
                 paragraph1="Van conversions, uniquely designed and built using sustainably sourced wood, ceramics, metal, and old world craftsmanship."
-                paragraph2="Van conversions, uniquely designed and built using sustainably sourced wood, ceramics, metal, and old world craftsmanship."
                 srcPhoto={window}
                 photoOnlyDesktop
                 altPhoto="kitchen window with a river"
@@ -34,11 +33,11 @@ const Home = (props) => {
             <ConversionOptions></ConversionOptions>
             <LeftPiece
                 flag="MATERIALS"
-                title="Custom ceramics tiles & knobs"
+                title="Custom ceramic tiles & knobs"
                 srcIcon={ceramicIcon}
                 altIcon="ceramic icon"
-                paragraph1="Hand painted custom tiles and knobs from Guanajuato, Mexico"
-                paragraph2="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                paragraph1="Hand painted custom tiles and knobs from Guanajuato, Mexico."
+                paragraph2="Option for leather drawer pulls available as well."
                 srcPhoto={ceramics}
                 altPhoto="handmade ceramics"
                 btnMessage="gallery"
@@ -46,10 +45,10 @@ const Home = (props) => {
             ></LeftPiece>
             <RightPiece
                 flag="BED EXTENSION"
-                title="Extend your beed to sleep more confortably"
+                title="Extend your beed to sleep more comfortably"
                 srcIcon={bedIcon}
                 altIcon="bed icon"
-                paragraph1="Flarespace bed extensions will provide you with the extra inches needed to lay down and sleep comfortably in the width of your van, freeing up a lot of space in your van."
+                paragraph1="Flarespace bed extensions will provide you with the extra inches needed to lay down and sleep comfortably in the width of your van, freeing up a lot of space."
                 paragraph2=" What will you do with more space inside your van?"
                 srcPhoto={bedExtension}
                 altPhoto="bed extension"

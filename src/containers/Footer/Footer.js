@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = (props) => {
     const navItems = [
-        { title: "Conversion Kits", path: "/conversions" },
+        { title: "Conversion Packages", path: "/conversions" },
         { title: "Gallery", path: "/gallery" },
         { title: "About Us", path: "/aboutUs" },
         { title: "FAQ", path: "/#faqs" },
@@ -32,7 +32,7 @@ const Footer = (props) => {
                     src={footerBrand}
                     alt={"Brand"}
                 ></img>
-                <h2 className={classes.join}>Join us</h2>
+                <h2 className={classes.join}>Follow Us</h2>
                 <div className={classes.socialMedia}>
                     <div className={classes.iconContainer}>
                         <a href={"https://www.facebook.com/patavansboulder"}>

@@ -13,7 +13,7 @@ const FaqsTestIcon = (props) => {
         {
             id: 1,
             title: "Fast Conversion",
-            subtitles: ["60 days basics 90 days full*"],
+            subtitles: ["60 days for basics 90 days for full *"],
             src: iconClock,
         },
         {

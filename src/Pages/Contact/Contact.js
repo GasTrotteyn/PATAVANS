@@ -136,13 +136,10 @@ const Contact = (props) => {
 
                     <div className={classes.ourData}>
                         <p>
-                            Phone: <br></br> E-mail: <br></br>Facebook:{" "}
-                            <br></br>Instagram:
+                            E-mail: <br></br>Facebook: <br></br>Instagram:
                         </p>
 
                         <p className={classes.strongs}>
-                            <strong>9999-9999-999</strong>
-                            <br></br>
                             <strong>patavansboulder@gmail.com</strong>
                             <br></br>
                             <strong>@patavansboulder</strong>
@@ -155,7 +152,7 @@ const Contact = (props) => {
                     <h4>Send Us a Message</h4>
                     <form onSubmit={submitHandler}>
                         <input
-                            placeholder="Name & lastname *"
+                            placeholder="First and Last Name *"
                             onChange={(event) => {
                                 inputChangeHandler(event, "name");
                             }}

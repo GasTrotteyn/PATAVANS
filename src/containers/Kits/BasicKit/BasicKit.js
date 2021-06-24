@@ -56,7 +56,7 @@ const BasicKit = (props) => {
                 "Insulation (Foamular)",
                 "Two Ceiling Fans (3 Speed)",
                 "Laminate Flooring",
-                "Cedar Wall Panelling",
+                "Cedar Wall Paneling",
                 "Simple Bed Frame",
             ],
             src: iconInterior,
@@ -64,7 +64,7 @@ const BasicKit = (props) => {
         {
             id: 2,
             title: "Exterior",
-            subtitles: ["Exterior with aluminum Roof Rack"],
+            subtitles: ["Aluminum Roof Rack"],
             src: iconExterior,
         },
         {
@@ -100,14 +100,14 @@ const BasicKit = (props) => {
                 srcIcon={iconPillow}
                 altIcon="pillow icon"
                 paragraph1="Get your van life started with our basic conversion package. Customize to your specifications by adding or removing any options."
-                paragraph2="Custom woodwork, custom cabinetry, electrical amenities, and a ventilation system controlled by two ceiling exhaust fans will make your next weekend excursion luxurious."
+                paragraph2="Custom woodwork, custom bed frame, electrical amenities, and a ventilation system controlled by two ceiling exhaust fans will make your next weekend excursion luxurious."
                 srcPhoto={interior}
                 altPhoto="interior of a van"
                 noButton
             ></RightPiece>
             <LeftPiece
                 flag="ENERGY SYSTEM"
-                title="Clear and self-sufficient solar energy"
+                title="Clean and self-sufficient solar energy"
                 srcIcon={iconSun}
                 altIcon="sun icon"
                 paragraph1="Using three 100 Watt solar panels we harness the power of the sun to outfit your van with electricity."
@@ -121,8 +121,8 @@ const BasicKit = (props) => {
                 title="Surrounded by insulated cedar paneling."
                 srcIcon={iconLog}
                 altIcon="log icon"
-                paragraph1="No need to worry if you dirt follows you in after your adventure, your laminate flooring will be easy to clean."
-                paragraph2="Then you can rest comfortably in your custom made bed frame, surrounded by insulated cedar paneling, a cozy retreat from the great outdoors."
+                paragraph1="No need to worry if your dirt follows you in after your adventure, your laminate flooring will be easy to clean."
+                paragraph2="Rest comfortably in your custom made bed frame, surrounded by insulated cedar paneling, a cozy retreat from the great outdoors."
                 srcPhoto={cedar}
                 altPhoto="interior of a van"
                 noButton
@@ -130,7 +130,7 @@ const BasicKit = (props) => {
             <IconSection
                 withBackground
                 oneLine
-                title={"What a basic conversion includes"}
+                title={"What a Basic Conversion includes"}
                 payload={icons2}
             ></IconSection>
             <Upgrade></Upgrade>

@@ -45,7 +45,7 @@ const BasicKit = (props) => {
         {
             id: 3,
             title: "Kitchen",
-            subtitles: ["Stove, fridge and sink"],
+            subtitles: ["Stove, Fridge and Sink"],
             src: iconStove,
         },
         {
@@ -164,7 +164,7 @@ const BasicKit = (props) => {
             <IconSection
                 withBackground
                 oneLine
-                title={"What a full conversion includes"}
+                title={"What a Full Conversion includes"}
                 subtitle={"Everithing in your basic conversion, plus:"}
                 payload={icons2}
             ></IconSection>
