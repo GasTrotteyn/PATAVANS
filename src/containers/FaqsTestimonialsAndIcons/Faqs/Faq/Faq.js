@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Faq.module.css";
 import iconPlus from "../../../../Assests/optimized/icon-plus.svg";
 import iconClose from "../../../../Assests/optimized/icon-close.svg";
+import { Link } from "react-router-dom";
 
 const Faq = (props) => {
     let answerToRender = null;
@@ -12,17 +13,17 @@ const Faq = (props) => {
                 <div>
                     <p className={classes.paragraph}>
                         {props.answer}{" "}
-                        <a href="https://www.google.com/">{props.link1}</a>
+                        <Link to={"/conversions"}>{props.link1}</Link>
                     </p>
                     <br></br>{" "}
                     <p className={classes.paragraph}>
                         {props.answer}{" "}
-                        <a href="https://www.google.com/">{props.link2}</a>
+                        <Link to={"/conversions"}>{props.link2}</Link>
                     </p>
                     <br></br>
                     <p className={classes.paragraph}>
                         {props.answer2}{" "}
-                        <a href="https://www.google.com/">{props.link3}</a>
+                        <Link to={"/conversions"}>{props.link3}</Link>
                     </p>
                 </div>
             );

@@ -35,18 +35,22 @@ const Footer = (props) => {
                 <h2 className={classes.join}>Join us</h2>
                 <div className={classes.socialMedia}>
                     <div className={classes.iconContainer}>
-                        <img
-                            src={iconFacebook}
-                            className={classes.icon}
-                            alt={"Facebook icon"}
-                        ></img>
+                        <a href={"https://www.facebook.com/patavansboulder"}>
+                            <img
+                                src={iconFacebook}
+                                className={classes.icon}
+                                alt={"Facebook icon"}
+                            ></img>
+                        </a>
                     </div>
                     <div className={classes.iconContainer}>
-                        <img
-                            src={iconInstagram}
-                            className={classes.icon}
-                            alt={"Instagram icon"}
-                        ></img>
+                        <a href={"https://www.instagram.com/patavans/"}>
+                            <img
+                                src={iconInstagram}
+                                className={classes.icon}
+                                alt={"Instagram icon"}
+                            ></img>
+                        </a>
                     </div>
                 </div>
                 <p className={classes.legal}>
@@ -74,18 +78,22 @@ const Footer = (props) => {
                 <div className={classes.socialMedia}>
                     <h2 className={classes.join}>Join us</h2>
                     <div className={classes.iconContainer}>
-                        <img
-                            src={iconFacebook}
-                            className={classes.icon}
-                            alt={"Facebook icon"}
-                        ></img>
+                        <a href={"https://www.facebook.com/patavansboulder"}>
+                            <img
+                                src={iconFacebook}
+                                className={classes.icon}
+                                alt={"Facebook icon"}
+                            ></img>
+                        </a>
                     </div>
                     <div className={classes.iconContainer}>
-                        <img
-                            src={iconInstagram}
-                            className={classes.icon}
-                            alt={"Instagram icon"}
-                        ></img>
+                        <a href={"https://www.instagram.com/patavans/"}>
+                            <img
+                                src={iconInstagram}
+                                className={classes.icon}
+                                alt={"Instagram icon"}
+                            ></img>
+                        </a>
                     </div>
                 </div>
             </div>
