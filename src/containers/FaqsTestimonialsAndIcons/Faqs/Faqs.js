@@ -49,7 +49,7 @@ const Faqs = (props) => {
         },
         {
             question: "DO YOU DO PLUMBING AND ELECTRICAL?",
-            answer: "Yes, we do full electrical, the output of our system is 300 Watts in solar, and 200 Amps in batteries. As far as plumbing goes, it will include the water pump, water line that runs to the faucet, the water tank, a shower seat as well as a porta-potty. Grey water tanks are available.",
+            answer: "Yes, we do full electrical, the output of our system is 480 Watts in solar, and 200 Amps in batteries. As far as plumbing goes, it will include the water pump, water line that runs to the faucet, the water tank, a shower seat as well as a porta-potty. Grey water tanks are available.",
             clicked: false,
             id: 6,
         },

@@ -39,7 +39,7 @@ const BasicKit = (props) => {
         {
             id: 2,
             title: "Energy & heater",
-            subtitles: ["480w & Evo 40 Webasto"],
+            subtitles: ["480w Solar Panels & Evo 40 Webasto"],
             src: iconSolarPanel,
         },
         {

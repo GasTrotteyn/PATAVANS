@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import classes from "./Contact.module.css";
 import Header from "../../containers/Headers/HeaderStandard/Header";
 import thistles from "../../Assests/optimized/banner-contact.jpg";
@@ -7,12 +7,15 @@ import axios from "axios";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import Backdrop from "../../components/UI/Backdrop/Backdrop";
 import { Link } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
+import { siteKey } from "../../data";
 
 //axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
 const Contact = (props) => {
     const [sending, setSending] = useState(false);
     const [respMessage, setRespMessage] = useState(null);
+    const [captchaOK, setCaptchaOk] = useState(false);
     const [data, setData] = useState({
         form: {
             name: {
@@ -74,9 +77,17 @@ const Contact = (props) => {
         setData(formModified);
     };
 
+    const captcha = useRef(null);
+
+    const onChange = (e) => {
+        if (captcha.current.getValue()) {
+            setCaptchaOk(true);
+        }
+    };
+
     const submitHandler = (event) => {
         event.preventDefault();
-        if (data.formIsValid) {
+        if (data.formIsValid && captchaOK) {
             setSending(true);
 
             let form = { ...data };
@@ -97,13 +108,13 @@ const Contact = (props) => {
                     );
                 });
         } else {
-            alert("some fields are required");
+            alert("some fields are required, including recaptcha");
         }
     };
 
     let classesArrayForButton = [
         classes.button,
-        data.formIsValid ? null : classes.alertButton,
+        data.formIsValid && captchaOK ? null : classes.alertButton,
     ].join(" ");
 
     let screenMessage = respMessage ? (
@@ -185,6 +196,13 @@ const Contact = (props) => {
                             }}
                             value={data.form.message.value}
                         ></textarea>
+                        <div className={classes.recaptcha}>
+                            <ReCAPTCHA
+                                ref={captcha}
+                                sitekey={siteKey}
+                                onChange={onChange}
+                            />
+                        </div>
                         <button className={classesArrayForButton}>Send</button>
                     </form>
                 </div>

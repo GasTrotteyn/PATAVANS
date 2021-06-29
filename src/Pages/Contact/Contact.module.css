@@ -63,6 +63,10 @@ p {
 .mailInvalid {
     color: #fb6060;
 }
+.recaptcha {
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
 .button {
     border: 1px solid #b8b8b8;
     width: 30vw;
@@ -118,6 +122,10 @@ p {
     }
     .textArea {
         height: 150px;
+    }
+    .recaptcha {
+        width: 110%;
+        margin: 10px 0 20px 0;
     }
 
     .button {

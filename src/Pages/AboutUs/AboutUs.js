@@ -68,8 +68,8 @@ const About = (props) => {
             ></RightPiece>
             <LeftPiece
                 flag="GUESS WHAT"
-                title="I'm John"
-                paragraph1="My name’s John! I like to adventure outdoors, hike, skate, and when I’m not at work I’m tending to my 20 year old cat Sophie."
+                title="I'm Moose"
+                paragraph1="I like to adventure outdoors, hike, skate, and when I’m not at work I’m tending to my 20 year old cat Sophie."
                 paragraph2=" I have a passion for skiing and a knack for fixing cars. Stoked to be a part of the PataVans team!
                 "
                 srcPhoto={moose}

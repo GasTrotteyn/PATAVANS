@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import classes from "./PreConversion.module.css";
 import Header from "../../containers/Headers/HeaderStandard/Header";
 import wind from "../../Assests/optimized/banner-preconversion-main.jpg";
@@ -7,10 +7,13 @@ import axios from "axios";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import Backdrop from "../../components/UI/Backdrop/Backdrop";
 import { Link } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
+import { siteKey } from "../../data";
 
 const Contact = (props) => {
     const [sending, setSending] = useState(false);
     const [respMessage, setRespMessage] = useState(null);
+    const [captchaOK, setCaptchaOk] = useState(false);
     const [data, setData] = useState({
         form: {
             firstName: {
@@ -102,9 +105,17 @@ const Contact = (props) => {
         setData(formModified);
     };
 
+    const captcha = useRef(null);
+
+    const onChange = (e) => {
+        if (captcha.current.getValue()) {
+            setCaptchaOk(true);
+        }
+    };
+
     const submitHandler = (event) => {
         event.preventDefault();
-        if (data.formIsValid) {
+        if (data.formIsValid && captchaOK) {
             setSending(true);
             let form = { ...data };
 
@@ -128,13 +139,13 @@ const Contact = (props) => {
                     );
                 });
         } else {
-            alert("some fields are required");
+            alert("some fields are required, including recaptcha");
         }
     };
 
     let classesArrayForButton = [
         classes.button,
-        data.formIsValid ? null : classes.alertButton,
+        data.formIsValid && captchaOK ? null : classes.alertButton,
     ].join(" ");
 
     let screenMessage = respMessage ? (
@@ -291,6 +302,13 @@ const Contact = (props) => {
                             asked specific question please allow 1-2 business
                             days for us to get back to you with your answer!
                         </p>
+                        <div className={classes.recaptcha}>
+                            <ReCAPTCHA
+                                ref={captcha}
+                                sitekey={siteKey}
+                                onChange={onChange}
+                            />
+                        </div>
                         <button className={classesArrayForButton}>Send</button>
                     </form>
                 </div>

@@ -14,7 +14,7 @@ import galMod8 from "../../../Assests/optimized/galMod8.jpg";
 import galMod9 from "../../../Assests/optimized/galMod9.jpg";
 import galMod10 from "../../../Assests/optimized/galMod10.jpeg";
 import galMod11 from "../../../Assests/optimized/galMod11.jpeg";
-import galMod12 from "../../../Assests/optimized/galMod12.jpeg";
+import galMod12 from "../../../Assests/optimized/galMod12.jpg";
 import galMod13 from "../../../Assests/optimized/galMod13.jpg";
 import galMod14 from "../../../Assests/optimized/galMod14.jpg";
 import galMod15 from "../../../Assests/optimized/galMod15.jpeg";

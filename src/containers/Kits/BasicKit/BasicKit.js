@@ -110,7 +110,7 @@ const BasicKit = (props) => {
                 title="Clean and self-sufficient solar energy"
                 srcIcon={iconSun}
                 altIcon="sun icon"
-                paragraph1="Using three 100 Watt solar panels we harness the power of the sun to outfit your van with electricity."
+                paragraph1="Using three 160 Watt solar panels we harness the power of the sun to outfit your van with electricity."
                 paragraph2="After panels charge your two insulated batteries you can run your LED lighting, switches and USB/cigar outlets completely fossil fuel free."
                 srcPhoto={roof}
                 altPhoto="roof with solar panels"

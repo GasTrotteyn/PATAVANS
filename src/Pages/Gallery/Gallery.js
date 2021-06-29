@@ -18,7 +18,7 @@ import gal11 from "../../Assests/optimized/Gallery1E.jpeg";
 import gal12 from "../../Assests/optimized/Gallery1F.jpg";
 import gal13 from "../../Assests/optimized/Gallery1G.jpg";
 import gal14 from "../../Assests/optimized/Gallery1H.jpeg";
-import gal15 from "../../Assests/optimized/Gallery1I.jpeg";
+import gal15 from "../../Assests/optimized/Gallery1I.jpg";
 import gal16 from "../../Assests/optimized/Gallery1J.jpg";
 import gal17 from "../../Assests/optimized/Gallery1K.jpeg";
 import gal18 from "../../Assests/optimized/Gallery1L.jpeg";
@@ -39,7 +39,7 @@ const Gallery = (props) => {
         { src: gal12, alt: "gal12", form: 1, topic: "vanLife" },
         { src: gal13, alt: "gal13", topic: "conversions" },
         { src: gal14, alt: "gal14", topic: "conversions" },
-        { src: gal15, alt: "gal15", form: 2, topic: "vanLife" },
+        { src: gal15, alt: "gal15", topic: "vanLife" },
         { src: gal16, alt: "gal16", topic: "conversions" },
         { src: gal17, alt: "gal17", topic: "conversions" },
         { src: gal18, alt: "gal18", topic: "conversions" },
