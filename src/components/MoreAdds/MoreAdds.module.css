@@ -1,12 +1,10 @@
 .container {
     width: 90vw;
-    /* border: 1px solid red; */
     margin-top: 10vw;
 }
 
 .title {
     margin: 0;
-    /* text-align: center; */
     font-size: 5.5vw;
 }
 
@@ -15,7 +13,7 @@
     flex-direction: column;
     align-content: space-between;
     flex-wrap: wrap;
-    height: 135vw;
+    height: 145vw;
     margin-top: 2vw;
 }
 
@@ -28,12 +26,15 @@
 .line {
     display: flex;
     justify-content: space-between;
-    width: 47%;
+    width: 48%;
 }
 
 .line p {
     margin: 2vw 0 0 0;
-    font-size: 2.8vw;
+    font-size: 2.7vw;
+}
+p.item {
+    font-size: 2.5vw;
 }
 
 @media (min-width: 768px) {

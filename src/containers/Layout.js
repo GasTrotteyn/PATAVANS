@@ -1,6 +1,5 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-//import classes from "./Layout.module.css";
 import Partners from "../containers/Partners/Partners";
 import Footer from "../containers/Footer/Footer";
 

@@ -65,10 +65,7 @@ const Footer = (props) => {
                     alt={"Brand"}
                 ></img>
                 <div className={classes.menuLegal}>
-                    <ul className={classes.menu}>
-                        {content}
-                        {/* <a href={"#faqs"}>faqs</a> */}
-                    </ul>
+                    <ul className={classes.menu}>{content}</ul>
 
                     <p className={classes.legal}>
                         © Copiright 2021 - PataVans, Boulder, CO - All rights

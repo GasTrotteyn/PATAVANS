@@ -178,14 +178,6 @@ const Slides = (props) => {
         setArray(modifiedArray);
     }, [array]);
 
-    // const onForwardAll = () => {
-    //     let modifiedArray = [...array];
-    //     const last = modifiedArray[modifiedArray.length - 1];
-    //     modifiedArray.unshift(last);
-    //     modifiedArray.splice(-1, 1);
-    //     setArray(modifiedArray);
-    // };
-
     useEffect(() => {
         const timer = setTimeout(() => {
             onBackAll();
@@ -195,7 +187,6 @@ const Slides = (props) => {
         };
     }, [onBackAll, time]);
 
-    // let controlsAll;
     let contentAll;
     let containerAll;
 
@@ -210,22 +201,8 @@ const Slides = (props) => {
                 ></img>
             );
         });
-        // controlsAll = (
-        //     <div className={classes.controlsSvg}>
-        //         <div className={classes.controlSvg} onClick={onBackAll}>
-        //             <img src={leftArrow} alt={"left arrow"}></img>
-        //         </div>
-        //         <div className={classes.controlSvg} onClick={onForwardAll}>
-        //             <img src={rightArrow} alt={"left arrow"}></img>
-        //         </div>
-        //     </div>
-        // );
-        containerAll = (
-            <div className={classes.containerAll}>
-                {/* {controlsAll} */}
-                {contentAll}
-            </div>
-        );
+
+        containerAll = <div className={classes.containerAll}>{contentAll}</div>;
     }
 
     return (

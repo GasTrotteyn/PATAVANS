@@ -17,11 +17,9 @@ p {
     font-size: 4.3vw;
 }
 .ourInfo {
-    /* border: 1px solid red; */
     width: 100%;
 }
 .ourData {
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
@@ -36,7 +34,6 @@ p {
     font-weight: bold;
 }
 .yourInfo {
-    /* border: 1px dotted red; */
     width: 100%;
 }
 .yourInfo form {
@@ -138,7 +135,6 @@ form .select input {
         font-size: 14px;
     }
     .yourInfo form {
-        /*border: 1px solid red;*/
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

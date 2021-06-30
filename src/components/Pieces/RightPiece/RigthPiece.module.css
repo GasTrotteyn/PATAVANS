@@ -35,10 +35,8 @@
 .photo {
     width: 100%;
     margin-top: 7vw;
-    /*max-height: 80vw;*/
 }
 
-/* display this photo in 768px onwards */
 .photoOnlyDesktop {
     display: none;
 }

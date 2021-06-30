@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px solid yellowgreen; */
     margin: 13vw 5vw;
 }
 h4 {
@@ -21,11 +20,9 @@ p {
     font-size: 4.3vw;
 }
 .ourInfo {
-    /* border: 1px solid red; */
     width: 100%;
 }
 .ourData {
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
@@ -40,7 +37,6 @@ p {
     font-weight: bold;
 }
 .yourInfo {
-    /* border: 1px dotted red; */
     width: 100%;
 }
 .yourInfo form {
@@ -99,7 +95,6 @@ p {
         max-width: 80vw;
     }
     .ourInfo {
-        /* border: 1px solid red; */
         width: 46%;
     }
     h4 {
@@ -112,7 +107,6 @@ p {
         font-size: 14px;
     }
     .yourInfo {
-        /* border: 1px dotted red; */
         width: 46%;
     }
     .yourInfo form input,

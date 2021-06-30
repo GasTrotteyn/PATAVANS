@@ -10,8 +10,6 @@ import { Link } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 import { siteKey } from "../../data";
 
-//axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
-
 const Contact = (props) => {
     const [sending, setSending] = useState(false);
     const [respMessage, setRespMessage] = useState(null);
@@ -62,9 +60,7 @@ const Contact = (props) => {
             formModified.form[id].value,
             formModified.form[id].validation
         );
-        //console.log(elementModified.valid);
         formModified.form[id] = elementModified;
-        //console.log(formModified[id]);
 
         //set the validity of the entire form
         let formIsValid = true;
@@ -94,7 +90,6 @@ const Contact = (props) => {
             axios
                 .post("http://localhost:3001/contact", form)
                 .then((resp) => {
-                    //console.log("esto mandaste" + resp);
                     setSending(false);
                     setRespMessage(
                         "Thank you for contacting us!!! Your information was sent successfully. We will reply as soon as possible."

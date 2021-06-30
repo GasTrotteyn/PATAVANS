@@ -1,6 +1,5 @@
 .container {
     width: 90vw;
-    /* border: 1px solid red; */
     margin-top: 5vw;
 }
 
@@ -26,7 +25,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* border: 1px solid red; */
     }
     .title {
         font-size: 30px;
@@ -42,18 +40,12 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        /* border: 1px solid violet; */
     }
 
     .photoStrip {
         display: flex;
         margin-top: 8vw;
-        /* justify-content: space-between; */
     }
-
-    /* .photoStrip img {
-        max-height: 18vw;
-    } */
 
     .titlesStrip {
         display: flex;

@@ -6,15 +6,6 @@ import { Link } from "react-router-dom";
 const SideDrawer = (props) => {
     const { show, clicked } = props;
 
-    //let classesArray;
-
-    // useEffect(() => {
-    //     classesArray = [
-    //         classes.container,
-    //         show ? classes.show : classes.out,
-    //     ].join(" ");
-    // }, []);
-
     const navItems = [
         { title: "HOME", path: "/" },
         { title: "CONVERSIONS", path: "/conversions" },

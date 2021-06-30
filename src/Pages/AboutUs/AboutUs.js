@@ -8,7 +8,7 @@ import LeftPiece from "../../components/Pieces/LeftPiece/LeftPiece";
 import pataWorking from "../../Assests/optimized/img-about.png";
 import pataClimbing from "../../Assests/optimized/pata_climbing.jpeg";
 import pataFlying from "../../Assests/optimized/pata_flying.jpg";
-import marisa from "../../Assests/optimized/marisa.jpg";
+import tylyn from "../../Assests/optimized/tylyn.jpeg";
 import xavi from "../../Assests/optimized/xavi1.jpg";
 import moose from "../../Assests/optimized/moose.jpg";
 
@@ -50,11 +50,11 @@ const About = (props) => {
             ></RightPiece>
             <LeftPiece
                 flag="I KNOW ABOUT THIS"
-                title="I'm Marisa"
-                paragraph1="Marisa is no stranger to travel and adventure! Marisa is a professional movement and circus artist based out of Boulder, CO, specializing in partner acrobatics, gymnastics and fire performance. She has traveled around the world spending extended periods of time in Europe, Latin America, and Africa."
-                paragraph2="Marisa has worked as the PataVans Operations Manager since 2018, when Pata introduced her to the #VanLife world. She loves working with clients to get them on their way to realizing their dream van and creating customized proposals."
-                srcPhoto={marisa}
-                altPhoto="Marisa"
+                title="I'm Tylyn"
+                paragraph1="Tylyn was born and raised in beautiful Colorado, where a deep love and desire for adventure were nurtured. She is passionate about partner acrobatics, traveling, and being shown new experiences."
+                paragraph2="She enjoys finding new hobbies and giving them a shot, no matter how silly she might look trying them. Tylyn is excited to support you on your journey of customizing and creating your very own uniquely-you adventure van!"
+                srcPhoto={tylyn}
+                altPhoto="Tylyn"
                 noButton
             ></LeftPiece>
             <RightPiece

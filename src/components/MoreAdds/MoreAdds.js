@@ -7,7 +7,7 @@ const MoreAdds = (props) => {
         { item: "PROPANE WATER HEATER", price: "$1,125" },
         { item: "WEBASTO Evo 40 HEATER", price: "$2,125" },
         { item: "KNOBS/LATCHES", price: "$135" },
-        { item: "UNDERBED STORAGE*", price: "$850-1,150" },
+        { item: "UNDERBED STORAGE*", price: "$850 - 1,150" },
         { item: "1 CABINET", price: "$855" },
         { item: "1 SHELF", price: "$295" },
         { item: "HARDWOOD TABLE", price: "$995" },
@@ -55,7 +55,7 @@ const MoreAdds = (props) => {
     const accesories = accesoriesArray.map((acc) => {
         return (
             <div key={acc.item} className={classes.line}>
-                <p>{acc.item}</p>
+                <p className={classes.item}>{acc.item}</p>
                 <p>{acc.price}</p>
             </div>
         );

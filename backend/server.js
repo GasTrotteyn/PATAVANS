@@ -26,21 +26,6 @@ const transporter = nodeMailer.createTransport({
     tls: { rejectUnauthorized: false },
 });
 
-// const mailOptions = {
-//     from: data.user,
-//     to: "gtrotteyn@hotmail.com",
-//     subject: "Sending Email using Node.js",
-//     text: "That was easy!",
-// };
-
-// transporter.sendMail(mailOptions, function (error, info) {
-//     if (error) {
-//         console.log(error);
-//     } else {
-//         console.log("Email sent: " + info.response);
-//     }
-// });
-
 app.get("/", (req, res) => {
     res.send("hola mundo!");
 });
@@ -60,7 +45,6 @@ app.post("/contact", (req, res) => {
             "Message: " +
             req.body.form.message.value;
 
-        //console.log(emailText);
         const mailOptions = {
             from: data.user,
             to: "patavansboulder@gmail.com",
@@ -114,7 +98,6 @@ app.post("/preconversion", (req, res) => {
             "Aditional message: " +
             req.body.form.message.value;
 
-        //console.log(emailText);
         const mailOptions = {
             from: data.user,
             to: "patavansboulder@gmail.com",

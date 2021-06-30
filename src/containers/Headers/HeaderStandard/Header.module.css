@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     height: 40vw;
-    /* border: 1px solid red; */
 }
 .background {
     position: absolute;
@@ -11,7 +10,6 @@
 }
 
 .texts {
-    /* border: 1px solid blue; */
     position: relative;
     left: 7vw;
     top: 7.5vw;
@@ -24,8 +22,6 @@
     font-family: "Roboto", sans-serif;
     font-size: 4vw;
     overflow-y: hidden;
-
-    /* border: 1px solid green; */
 }
 .flag {
     color: #ffffff;

@@ -90,7 +90,6 @@ const Contact = (props) => {
             formModified.form[id].value,
             formModified.form[id].validation
         );
-        //console.log(elementModified.valid);
         formModified.form[id] = elementModified;
 
         //set the validity of the entire form
@@ -99,7 +98,6 @@ const Contact = (props) => {
             formIsValid = formModified.form[identifier].valid && formIsValid;
         }
         formModified.formIsValid = formIsValid;
-        //console.log(formIsValid);
 
         // update the state
         setData(formModified);
@@ -121,10 +119,6 @@ const Contact = (props) => {
 
             axios
                 .post("http://localhost:3001/preconversion", form)
-                // .then((resp) => {
-                //     //let mostrable = resp.json();
-                //     return mostrable;
-                // })
                 .then((resp) => {
                     setSending(false);
                     setRespMessage(
