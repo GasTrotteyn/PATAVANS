@@ -118,7 +118,10 @@ const Contact = (props) => {
             let form = { ...data };
 
             axios
-                .post("http://localhost:3001/preconversion", form)
+                .post(
+                    "https://patavans-backend-deploy.herokuapp.com/preconversion",
+                    form
+                )
                 .then((resp) => {
                     setSending(false);
                     setRespMessage(
@@ -173,7 +176,7 @@ const Contact = (props) => {
                 <div className={classes.yourInfo}>
                     <form onSubmit={submitHandler}>
                         <input
-                            placeholder="First Name *"
+                            placeholder="First Name * (please, do not use the autofill)"
                             onChange={(event) => {
                                 inputChangeHandler(event, "firstName");
                             }}
@@ -192,7 +195,7 @@ const Contact = (props) => {
                                     ? null
                                     : classes.mailInvalid
                             }
-                            placeholder="E-mail *"
+                            placeholder="E-mail * (please, do not use the autofill)"
                             onChange={(event) => {
                                 inputChangeHandler(event, "email");
                             }}

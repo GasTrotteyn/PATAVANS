@@ -88,7 +88,10 @@ const Contact = (props) => {
 
             let form = { ...data };
             axios
-                .post("http://localhost:3001/contact", form)
+                .post(
+                    "https://patavans-backend-deploy.herokuapp.com/contact",
+                    form
+                )
                 .then((resp) => {
                     setSending(false);
                     setRespMessage(
@@ -158,7 +161,7 @@ const Contact = (props) => {
                     <h4>Send Us a Message</h4>
                     <form onSubmit={submitHandler}>
                         <input
-                            placeholder="First and Last Name *"
+                            placeholder="First and Last Name * (please, do not use the autofill)"
                             onChange={(event) => {
                                 inputChangeHandler(event, "name");
                             }}
@@ -170,14 +173,14 @@ const Contact = (props) => {
                                     ? null
                                     : classes.mailInvalid
                             }
-                            placeholder="E-mail *"
+                            placeholder="E-mail * (please, do not use the autofill)"
                             onChange={(event) => {
                                 inputChangeHandler(event, "email");
                             }}
                             value={data.form.email.value}
                         ></input>
                         <input
-                            placeholder="Phone *"
+                            placeholder="Phone"
                             onChange={(event) => {
                                 inputChangeHandler(event, "tel");
                             }}
