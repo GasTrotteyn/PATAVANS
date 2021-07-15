@@ -13,10 +13,14 @@ import bedExtension from "../../Assests/optimized/BedExtensionFinal.jpg";
 import HomeGallery from "../Gallery/HomeGallery/HomeGallery";
 import FaqsTestIcon from "../FaqsTestimonialsAndIcons/FaqsTestIcon";
 import Iframe from "../../components/UI/Iframe/Iframe";
+import CookieConsent from "react-cookie-consent";
 
 const Home = (props) => {
     return (
         <React.Fragment>
+            <CookieConsent>
+                This website uses cookies to enhance the user experience.
+            </CookieConsent>
             <HeaderHome></HeaderHome>
             <Carousel></Carousel>
             <RightPiece
