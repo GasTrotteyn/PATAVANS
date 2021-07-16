@@ -26,3 +26,5 @@ data.js
 
 backend/node_modules/*
 
+.eslintcache
+
