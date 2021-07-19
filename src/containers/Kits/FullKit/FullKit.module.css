@@ -42,6 +42,15 @@
     z-index: 1;
 }
 
+.price {
+    width: 50%;
+    margin: 5vw 2vw 0 2vw;
+    text-align: center;
+    background-color: #e4e4e4;
+    padding: 2vw;
+    font-size: 4vw;
+}
+
 @media (min-width: 768px) {
     .kitSelector {
         height: 100px;
@@ -49,6 +58,10 @@
     .buttons {
         margin: 23px 39px 0 39px;
         font-size: 24px;
+    }
+    .price {
+        font-size: 20px;
+        width: 20vw;
     }
     .title {
         padding: 21px 0 0 0;

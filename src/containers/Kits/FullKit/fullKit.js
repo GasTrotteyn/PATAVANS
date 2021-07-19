@@ -125,6 +125,7 @@ const BasicKit = (props) => {
                     <div className={classes.title}>Full Conversion</div>
                 </div>
             </div>
+            <div className={classes.price}>Price: $36,000</div>
             <IconSection payload={icons1} oneLine></IconSection>
             <RightPiece
                 flag="FULL CONVERSION PACKAGE"

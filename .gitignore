@@ -28,4 +28,4 @@ backend/node_modules/*
 
 .eslintcache
 
-src/Assest
+src/Assest/*

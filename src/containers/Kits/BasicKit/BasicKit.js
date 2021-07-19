@@ -93,6 +93,7 @@ const BasicKit = (props) => {
                     </div>
                 </div>
             </div>
+            <div className={classes.price}>Price: $19,000</div>
             <IconSection payload={icons1} oneLine></IconSection>
             <RightPiece
                 flag="BASIC CONVERSION PACKAGE"
