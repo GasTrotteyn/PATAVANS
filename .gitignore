@@ -28,5 +28,6 @@ backend/node_modules/*
 
 .eslintcache
 
-/src/Assest
-/proso/coso
+src/Assests/fonts
+src/Assests/optimized
+src/proso/coso
