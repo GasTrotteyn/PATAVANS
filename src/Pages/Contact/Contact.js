@@ -9,6 +9,7 @@ import Backdrop from "../../components/UI/Backdrop/Backdrop";
 import { Link } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 import { siteKey } from "../../data";
+import { urlBackendContact } from "../../data";
 
 const Contact = (props) => {
     const [sending, setSending] = useState(false);
@@ -88,10 +89,7 @@ const Contact = (props) => {
 
             let form = { ...data };
             axios
-                .post(
-                    "https://patavans-backend-deploy.herokuapp.com/contact",
-                    form
-                )
+                .post(urlBackendContact, form)
                 .then((resp) => {
                     setSending(false);
                     setRespMessage(
